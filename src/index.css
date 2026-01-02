@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-neue: "Neue Montreal", system-ui, sans-serif;
+  --font-haas: "Neue Haas Unica Pro", system-ui, sans-serif;
+  --font-plus-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
+
+}
