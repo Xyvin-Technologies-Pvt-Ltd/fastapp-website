@@ -51,6 +51,7 @@ const HowWeWork = () => {
                                 alt="Clients Wrapper"
                                 className="w-full h-full object-cover"
                             />
+                            
                         </div>
                     </div>
                 </div>
