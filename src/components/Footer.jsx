@@ -6,9 +6,9 @@ import { IoLocationSharp } from "react-icons/io5";
 const Footer = () => {
   const quickLinks = [
     { text: 'Home', href: '/' },
-    { text: 'About', href: '#about' },
-    { text: 'Rider App', href: '#rider-app' },
-    { text: 'Driver App', href: '/' },
+    { text: 'About', href: '/about' },
+    { text: 'Rider App', href: '/rider-app' },
+    { text: 'Driver App', href: '/driver-app' },
     { text: 'Support', href: '/support' },
   ];
 
