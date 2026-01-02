@@ -38,7 +38,6 @@ const FeatureSection = () => {
                         FastApp makes booking rides faster, safer, and more transparent—so you can travel with confidence.
                     </p>
                 </div>
-
                 <div className="flex flex-col md:block">
                     <div className="flex flex-col md:flex-row gap-6 mb-6">
                         <div className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[480px] flex flex-col">
@@ -56,7 +55,6 @@ const FeatureSection = () => {
                                 />
                             </div>
                         </div>
-
                         <div className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[660px] flex flex-col">
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[1].title}
