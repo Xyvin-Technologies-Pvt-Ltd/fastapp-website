@@ -140,7 +140,7 @@ const SupportContact = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-[40px] sm:gap-[50px] lg:gap-[58px] w-full lg:flex-1 text-center lg:text-left lg:pl-[42px]">
+              <div className="flex flex-col gap-[40px] sm:gap-[50px] lg:gap-[58px] w-full lg:flex-1 text-center lg:text-left lg:pl-[42px] lg:pb-15">
                 <div className="flex flex-col gap-[12px] sm:gap-[14px] lg:gap-[14px] lg:mt-[32px]">
                   <h2
                     className="text-text-primary max-w-2xl mx-auto lg:mx-0"

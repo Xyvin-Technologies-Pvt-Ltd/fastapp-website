@@ -70,11 +70,17 @@ const AppShowcaseSection = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
 
                         <div className="lg:col-span-4 w-full flex justify-center">
-                            <div className="relative w-full h-full">
+                            <div className="relative w-full min-h-[400px] lg:min-h-[500px] aspect-[3/4] overflow-hidden rounded-[20px]">
                                 <img
                                     src={showcaseItems[0].image}
                                     alt={showcaseItems[0].title}
-                                    className="w-full h-full object-cover rounded-[20px]"
+                                    className="w-full h-full object-cover object-center"
+                                    loading="lazy"
+                                    style={{ 
+                                        imageRendering: '-webkit-optimize-contrast',
+                                        willChange: 'transform',
+                                        transform: 'translateZ(0)'
+                                    }}
                                 />
                             </div>
                         </div>
@@ -146,11 +152,17 @@ const AppShowcaseSection = () => {
                         </div>
 
                         <div className="lg:order-2 lg:col-span-4 w-full flex justify-center">
-                            <div className="relative w-full h-full">
+                            <div className="relative w-full min-h-[400px] lg:min-h-[500px] aspect-[3/4] overflow-hidden rounded-[20px]">
                                 <img
                                     src={showcaseItems[1].image}
                                     alt={showcaseItems[1].title}
-                                    className="w-full h-full object-cover rounded-[20px]"
+                                    className="w-full h-full object-cover object-center"
+                                    loading="lazy"
+                                    style={{ 
+                                        imageRendering: '-webkit-optimize-contrast',
+                                        willChange: 'transform',
+                                        transform: 'translateZ(0)'
+                                    }}
                                 />
                             </div>
                         </div>
