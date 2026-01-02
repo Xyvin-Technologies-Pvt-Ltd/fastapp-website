@@ -43,7 +43,6 @@ const HowWeWork = () => {
                         <div className="overflow-hidden">
                             <img src={women} alt="Safety First" className="w-full h-full object-cover" />
                         </div>
-
                         <div
                             className="absolute -bottom-4 -right-4 bg-white rounded-[10px] overflow-hidden shadow-xl z-10 box-content border border-[#E5E7EB] w-[160px] h-[100px] md:w-[245px] md:h-[160px]"
                         >
