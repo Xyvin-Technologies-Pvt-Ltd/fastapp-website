@@ -1,4 +1,4 @@
-import image from '../../assets/images/Our Office.webp'
+import image from '../../assets/images/our-office.webp'
 
 const OurOfficeSection = () => {
     const visionPoints = [

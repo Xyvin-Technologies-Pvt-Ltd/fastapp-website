@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { BsChatFill } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
 import ui from '../../assets/images/ui.webp'
-import phone from '../../assets/images/Mobile UI.webp'
+import phone from '../../assets/images/mobile-ui.webp'
 import bg from '../../assets/images/bg.png'
 import scanner1 from '../../assets/images/scanner1.webp'
 import scanner2 from '../../assets/images/scanner2.webp'

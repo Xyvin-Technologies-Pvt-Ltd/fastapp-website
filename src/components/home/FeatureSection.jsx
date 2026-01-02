@@ -1,7 +1,7 @@
-import image1 from '../../assets/images/Splash Screens.webp';
-import image2 from '../../assets/images/Card Image.webp';
+import image1 from '../../assets/images/splash-screens.webp';
+import image2 from '../../assets/images/card-image.webp';
 import image3 from '../../assets/images/cardimage3.webp';
-import image4 from '../../assets/images/Single serch.webp';
+import image4 from '../../assets/images/single-ser.webp';
 
 const FeatureSection = () => {
     const features = [
