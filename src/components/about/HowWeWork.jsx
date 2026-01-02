@@ -45,12 +45,7 @@ const HowWeWork = () => {
                         </div>
 
                         <div
-                            className="absolute -bottom-4 -right-4 bg-white rounded-[10px] overflow-hidden shadow-xl z-10 box-content"
-                            style={{
-                                width: '245px',
-                                height: '160px',
-                                border: '1px solid #E5E7EB'
-                            }}
+                            className="absolute -bottom-4 -right-4 bg-white rounded-[10px] overflow-hidden shadow-xl z-10 box-content border border-[#E5E7EB] w-[160px] h-[100px] md:w-[245px] md:h-[160px]"
                         >
                             <img
                                 src={clientsWrapper}

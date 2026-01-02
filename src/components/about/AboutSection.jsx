@@ -16,19 +16,19 @@ const AboutSection = () => {
                     </h2>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-20">
-                    <div className="flex flex-col justify-between md:w-[55%]">
+                <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-20">
+                    <div className="flex flex-col justify-between lg:w-[55%]">
                         <div className="font-haas font-bold text-[16px] leading-[24px] tracking-[-0.8px] uppercase">
                             Who <span className="text-[#7E7E7E] font-[700]">We Are?</span>
                         </div>
-                        <div className="flex gap-4 items-center mt-8 md:mt-0">
-                            <img src={image1} alt="About 1" className="w-[100px] h-[100px] md:w-32 md:h-30 object-cover rounded-[8px]" />
-                            <img src={image2} alt="About 2" className="w-[100px] h-[100px] md:w-32 md:h-30 object-cover rounded-[8px]" />
-                            <img src={image3} alt="About 3" className="w-[100px] h-[100px] md:w-32 md:h-30 object-cover rounded-[130px]" />
+                        <div className="flex gap-4 items-center mt-8 lg:mt-0">
+                            <img src={image1} alt="About 1" className="w-[100px] h-[100px] lg:w-32 lg:h-30 object-cover rounded-[8px]" />
+                            <img src={image2} alt="About 2" className="w-[100px] h-[100px] lg:w-32 lg:h-30 object-cover rounded-[8px]" />
+                            <img src={image3} alt="About 3" className="w-[100px] h-[100px] lg:w-32 lg:h-30 object-cover rounded-[130px]" />
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-6 md:w-[45%] font-haas font-medium text-[16px] md:text-[18px] leading-[24px] text-[#7E7E7E] md:text-right md:items-end">
+                    <div className="flex flex-col gap-6 lg:w-[42%] font-haas font-medium text-[16px] lg:text-[18px] leading-[24px] text-[#7E7E7E] lg:text-right lg:items-end">
                         <div className="max-w-[600px] text-left">
                             <p className="mb-10 font-haas">
                                 FastApp is a technology-driven mobility platform that connects riders with nearby drivers in just a few taps. Our mission is to simplify urban transportation by combining real-time technology, transparent pricing, and safety-first design.
