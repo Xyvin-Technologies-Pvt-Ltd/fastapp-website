@@ -1,5 +1,6 @@
 import React from 'react';
 import driverapp from '../../assets/images/driverapp.jpg';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
@@ -16,7 +17,10 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-14 h-full flex items-end">
-          <h1
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="
               text-white font-bold font-haas
               text-[24px] leading-[36px] 
@@ -25,7 +29,7 @@ const HeroSection = () => {
               drop-shadow-2xl
               mb-[50px] md:mb-[75px] lg:mb-[90px]
             "
-          >Your Ride. Your Way. Anytime.</h1>
+          >Your Ride. Your Way. Anytime.</motion.h1>
         </div>
       </div>
     </section>

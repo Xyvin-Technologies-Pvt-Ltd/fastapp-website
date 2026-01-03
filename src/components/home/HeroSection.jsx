@@ -2,6 +2,7 @@ import React from 'react';
 import HeroImage from '../../assets/images/herosection.jpg';
 import { FaApple } from "react-icons/fa6";
 import { FaGooglePlay } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 
 const HeroSection = () => {
@@ -14,34 +15,50 @@ const HeroSection = () => {
                 <div className="absolute inset-0 "
                     style={{
                         background:
-                        "linear-gradient(181.47deg, rgba(0,0,0,0) 15.32%, rgba(0,0,0,0.7) 84.29%)"
+                            "linear-gradient(181.47deg, rgba(0,0,0,0) 15.32%, rgba(0,0,0,0.7) 84.29%)"
                     }}></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white ">
-                <h1 className="font-neue font-bold text-center align-middle tracking-tight drop-shadow-xl
+                <motion.h1
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="font-neue font-bold text-center align-middle tracking-tight drop-shadow-xl
                         text-4xl leading-[1.2] -tracking-[0.8px] mb-[9px]
                         md:text-6xl
                         lg:text-[60px]
                     ">Book Rides in Minutes <br />With <span className="text-[#2DA151] italic">FastApp</span>
-                </h1>
+                </motion.h1>
 
-                <p className="font-neue font-normal text-[16px] md:text-[18px] leading-[26px] md:leading-[30.6px] text-center">
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                    className="font-neue font-normal text-[16px] md:text-[18px] leading-[26px] md:leading-[30.6px] text-center">
                     Get affordable rides with live tracking and easy payments.
-                </p>
-                <p className="font-neue font-normal text-[16px] mb-[9px] md:text-[18px] leading-[26px] md:leading-[30.6px] text-center">
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                    className="font-neue font-normal text-[16px] mb-[9px] md:text-[18px] leading-[26px] md:leading-[30.6px] text-center">
                     Fast, Safe Rides — Anytime, Anywhere
-                </p>
+                </motion.p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <button className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black border-gray-300 px-6 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+                    className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black border-gray-300 px-6 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition active:scale-95">
                         <FaApple className="text-[24px]" />
                         App Store
                     </button>
-                    <button className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black  border-gray-300 px-5 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition">
+                    <button className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black  border-gray-300 px-5 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition active:scale-95">
                         <FaGooglePlay className="text-[20px]" />Google Play
                     </button>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

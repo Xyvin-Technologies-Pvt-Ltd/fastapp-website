@@ -6,6 +6,7 @@ import icon3 from '../../assets/images/icon3.webp';
 import icon4 from '../../assets/images/icon4.webp';
 import icon5 from '../../assets/images/icon5.webp';
 import icon6 from '../../assets/images/icon6.webp';
+import { motion } from 'framer-motion';
 
 const DriverFeaturesSection = () => {
   const features = [
@@ -41,11 +42,39 @@ const DriverFeaturesSection = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.16, 1, 0.3, 1]
+      }
+    }
+  };
+
   return (
-    <section className="w-full bg-white py-[60px] sm:py-[80px] lg:py-[101px]">
+    <section className="w-full bg-white py-[60px] sm:py-[80px] lg:py-[101px] overflow-hidden">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-20">
         <div className="flex flex-col gap-[48px] sm:gap-[56px] lg:gap-[64px] items-center">
-          <div className="flex flex-col gap-3 items-center px-4 md:px-[150px] lg:px-[216px]">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col gap-3 items-center px-4 md:px-[150px] lg:px-[216px]"
+          >
             <div className="flex items-center gap-2 py-[8px] px-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px]">
               <PiLightbulbFilamentLight className="w-5 h-5 flex-shrink-0" />
               <span className="font-instrument-sans font-medium text-base leading-6 align-middle">
@@ -71,17 +100,26 @@ const DriverFeaturesSection = () => {
                 </span>
               </h2>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
             {features?.map((feature, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={cardVariants}
+                whileHover={{ y: -8, shadow: "0 10px 30px -10px rgba(0,0,0,0.1)" }}
                 className="
-                bg-white rounded-[5px] 
+                bg-white rounded-[12px] 
                 shadow-[0px_1.8px_5.39px_0px_#0000000F] 
                 flex flex-col gap-4 lg:gap-5 items-start 
                 px-5 py-6 lg:pl-[21px] lg:pr-5
+                border border-transparent hover:border-gray-100 transition-all duration-300
               "
               >
                 <img
@@ -103,9 +141,9 @@ const DriverFeaturesSection = () => {
                     {feature?.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

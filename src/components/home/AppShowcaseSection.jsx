@@ -4,6 +4,7 @@ import { BiMessageRoundedDots } from "react-icons/bi";
 import { FiSmile } from "react-icons/fi";
 import { FiShare2 } from "react-icons/fi";
 import { PiUsersThreeBold } from "react-icons/pi";
+import { motion } from 'framer-motion';
 
 const AppShowcaseSection = () => {
     const showcaseItems = [
@@ -63,40 +64,91 @@ const AppShowcaseSection = () => {
         }
     ];
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: "easeOut"
+            }
+        }
+    };
+
     return (
         <section className="py-20 bg-white font-neue">
+            {/* First Section */}
             <div className="py-12">
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-[120px]">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-
-                        <div className="lg:col-span-4 w-full flex justify-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="lg:col-span-4 w-full flex justify-center"
+                        >
                             <div className="relative w-full min-h-[400px] lg:min-h-[500px] aspect-[3/4] overflow-hidden rounded-[20px]">
                                 <img
                                     src={showcaseItems[0].image}
                                     alt={showcaseItems[0].title}
                                     className="w-full h-full object-cover object-center"
                                     loading="lazy"
-                                    style={{ 
+                                    style={{
                                         imageRendering: '-webkit-optimize-contrast',
                                         willChange: 'transform',
                                         transform: 'translateZ(0)'
                                     }}
                                 />
                             </div>
-                        </div>
+                        </motion.div>
 
                         <div className="lg:col-span-8 w-full">
                             <div className="max-w-full">
-                                <h2 className="text-4xl md:text-5xl lg:text-[56px] font-medium text-black mb-2 -tracking-[1px] leading-[120%] font-neue">
+                                <motion.h2
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.6 }}
+                                    className="text-4xl md:text-5xl lg:text-[56px] font-medium text-black mb-2 -tracking-[1px] leading-[120%] font-neue"
+                                >
                                     {showcaseItems[0].title}
-                                </h2>
-                                <p className="text-3xl md:text-4xl lg:text-[56px] font-medium text-[#2DA151] italic mb-10 leading-[120%] font-neue">
+                                </motion.h2>
+                                <motion.p
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.6, delay: 0.1 }}
+                                    className="text-3xl md:text-4xl lg:text-[56px] font-medium text-[#2DA151] italic mb-10 leading-[120%] font-neue"
+                                >
                                     {showcaseItems[0].subtitle}
-                                </p>
+                                </motion.p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <motion.div
+                                    variants={containerVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true }}
+                                    className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                                >
                                     {showcaseItems[0].features.map((feature, fIndex) => (
-                                        <div key={fIndex} className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#eeeeee] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col justify-between gap-4 h-full">
+                                        <motion.div
+                                            key={fIndex}
+                                            variants={itemVariants}
+                                            whileHover={{ y: -5, shadow: "0 10px 30px -15px rgba(0,0,0,0.1)" }}
+                                            className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#eeeeee] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col justify-between gap-4 h-full"
+                                        >
                                             <div className="flex items-center gap-3">
                                                 <div className="text-black shrink-0">
                                                     {feature.icon}
@@ -108,32 +160,54 @@ const AppShowcaseSection = () => {
                                             <p className="text-[16px] text-[#ACACAC] font-haas font-normal leading-[120%]">
                                                 {feature.description}
                                             </p>
-                                        </div>
+                                        </motion.div>
                                     ))}
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
+            {/* Second Section */}
             <div className="py-12">
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-[120px]">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-
                         <div className="lg:order-1 lg:col-span-8 w-full">
                             <div className="max-w-full">
-                                <h2 className="text-4xl md:text-5xl lg:text-[56px] font-medium text-black mb-2 -tracking-[1px] leading-[120%] font-neue">
+                                <motion.h2
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.6 }}
+                                    className="text-4xl md:text-5xl lg:text-[56px] font-medium text-black mb-2 -tracking-[1px] leading-[120%] font-neue"
+                                >
                                     {showcaseItems[1].title}
-                                </h2>
-                                <p className="text-3xl md:text-4xl lg:text-[56px] font-medium text-[#2DA151] italic mb-10 leading-[120%] font-neue">
+                                </motion.h2>
+                                <motion.p
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.6, delay: 0.1 }}
+                                    className="text-3xl md:text-4xl lg:text-[56px] font-medium text-[#2DA151] italic mb-10 leading-[120%] font-neue"
+                                >
                                     {showcaseItems[1].subtitle}
-                                </p>
+                                </motion.p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <motion.div
+                                    variants={containerVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true }}
+                                    className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                                >
                                     {showcaseItems[1].features.map((feature, fIndex) => (
-                                        <div key={fIndex} className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#eeeeee] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col justify-between gap-4 h-full">
+                                        <motion.div
+                                            key={fIndex}
+                                            variants={itemVariants}
+                                            whileHover={{ y: -5 }}
+                                            className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#eeeeee] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col justify-between gap-4 h-full"
+                                        >
                                             <div className="flex items-center gap-3">
                                                 <div className="text-black shrink-0">
                                                     {feature.icon}
@@ -145,33 +219,45 @@ const AppShowcaseSection = () => {
                                             <p className="text-[16px] text-[#ACACAC] font-haas font-normal leading-[120%]">
                                                 {feature.description}
                                             </p>
-                                        </div>
+                                        </motion.div>
                                     ))}
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
 
-                        <div className="lg:order-2 lg:col-span-4 w-full flex justify-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="lg:order-2 lg:col-span-4 w-full flex justify-center"
+                        >
                             <div className="relative w-full min-h-[400px] lg:min-h-[500px] aspect-[3/4] overflow-hidden rounded-[20px]">
                                 <img
                                     src={showcaseItems[1].image}
                                     alt={showcaseItems[1].title}
                                     className="w-full h-full object-cover object-center"
                                     loading="lazy"
-                                    style={{ 
+                                    style={{
                                         imageRendering: '-webkit-optimize-contrast',
                                         willChange: 'transform',
                                         transform: 'translateZ(0)'
                                     }}
                                 />
                             </div>
-                        </div>
-
+                        </motion.div>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
-                <a href="#" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100">
+
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8"
+            >
+                <a href="#" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
                     <div className="w-8 h-8 shrink-0 flex items-center justify-center">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5126 15.1764L4.85156 3.51534C5.03541 3.42466 5.23963 3.37418 5.45156 3.37418C5.64501 3.37418 5.82902 3.41617 5.99616 3.49132L21.3749 12.2353L16.5126 15.1764Z" fill="#00E676" />
@@ -186,7 +272,7 @@ const AppShowcaseSection = () => {
                         <span className="text-[18px] font-medium text-[#1A1A1A] leading-[27px] font-neue">Google Play</span>
                     </div>
                 </a>
-                <a href="#" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100">
+                <a href="#" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
                     <div className="w-8 h-8 shrink-0 flex items-center justify-center">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22.0673 3.37418C20.6543 3.37418 18.668 4.25684 17.7012 5.4043C16.8379 6.43164 16.1113 8.04492 16.1113 9.61328C16.1113 9.83203 16.1367 10.0469 16.1826 10.252C17.6543 10.1836 19.5043 9.25586 20.4414 8.07617C21.3145 6.99414 22.0195 5.39453 22.0195 3.86914C22.0195 3.65039 21.9941 3.43555 21.9482 3.23047C21.9839 3.22637 22.0303 3.22418 22.0673 3.22418C22.0673 3.22418 22.0673 3.37418 22.0673 3.37418ZM25.8672 17.6895C25.8457 14.8555 28.2168 13.4316 28.3242 13.3633C26.9668 11.4336 24.8496 11.1719 24.1113 11.1445C22.3457 10.9727 20.627 12.1582 19.7285 12.1582C18.8223 12.1582 17.4121 11.166 15.9395 11.1914C14.0273 11.2188 12.2461 12.2773 11.2617 13.9453C9.25391 17.3203 10.748 22.3086 12.7129 25.0781C13.6875 26.4258 14.8203 27.9316 16.3125 27.8769C17.7539 27.8184 18.2812 26.9746 20.0156 26.9746C21.75 26.9746 22.25 27.8769 23.7656 27.8516C25.3086 27.8223 26.2773 26.4844 27.2344 25.1094C28.3516 23.5137 28.8027 21.9648 28.8223 21.8867C28.7891 21.873 25.8984 20.7969 25.8672 17.6895Z" fill="#1A1A1A" />
@@ -197,7 +283,7 @@ const AppShowcaseSection = () => {
                         <span className="text-[18px] font-medium text-[#1A1A1A] leading-[27px] font-neue">App Store</span>
                     </div>
                 </a>
-            </div>
+            </motion.div>
         </section>
     );
 };

@@ -8,6 +8,7 @@ import bg from '../../assets/images/bg.png'
 import scanner1 from '../../assets/images/scanner1.webp'
 import scanner2 from '../../assets/images/scanner2.webp'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { motion } from 'framer-motion';
 
 const SupportContact = () => {
   const supportOptions = [
@@ -44,6 +45,28 @@ const SupportContact = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.16, 1, 0.3, 1]
+      }
+    }
+  };
+
   return (
     <>
       <svg width="0" height="0" className="absolute">
@@ -53,41 +76,58 @@ const SupportContact = () => {
         </linearGradient>
       </svg>
 
-      <section className="w-full pt-[120px] pb-[60px] sm:pb-[80px] lg:pb-[96px]">
+      <section className="w-full pt-[120px] pb-[60px] sm:pb-[80px] lg:pb-[96px] overflow-hidden">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col justify-center items-center text-center bg-background-[#F4F4F4]">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col justify-center items-center text-center bg-background-[#F4F4F4]"
+          >
             <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold leading-[42px] sm:leading-[54px] md:leading-[63px] lg:leading-[73px] text-text-primary mb-4 sm:mb-6 lg:mb-[20px] max-w-4xl">
               Contact FastApp Support
             </h1>
             <p className="text-base text-[#7E7E7E] text-[18px] font-normal leading-[21px] text-text-muted max-w-2xl">
               If you can not find what you are looking for, our support team is ready to help.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <section className="w-full py-[60px] sm:py-[80px] lg:py-[102px] bg-white">
+      <section className="w-full py-[60px] sm:py-[80px] lg:py-[102px] bg-white overflow-hidden">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-[302px]">
-          <div className="flex flex-col sm:flex-row gap-[40px] sm:gap-[60px] lg:gap-[100px] justify-center items-stretch">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="flex flex-col sm:flex-row gap-[40px] sm:gap-[60px] lg:gap-[100px] justify-center items-stretch"
+          >
             {supportOptions?.map(option => (
-              <div
+              <motion.div
                 key={option?.id}
+                variants={itemVariants}
+                whileHover={{ y: -8, shadow: "0 10px 30px -10px rgba(0,0,0,0.1)" }}
                 className="
-                        flex flex-col items-start cursor-pointer
+                        group flex flex-col items-start cursor-pointer
                         bg-[#FAFAFA]
-                        rounded-[4px]
+                        rounded-[12px]
                         border border-[#1A1A1A0D]
                         shadow-[0_0_4px_0_#0000000A]
                         pl-[36px] pr-[36px] pt-[35px] pb-[30px]
-                        hover:shadow-md transition-shadow duration-300
+                        hover:border-[#2DA15140]
+                        transition-all duration-300
                     "
               >
-                <div className="mb-[16px]">
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  className="mb-[16px]"
+                >
                   {option?.icon}
-                </div>
+                </motion.div>
 
                 <h3
-                  className="text-text-secondary whitespace-nowrap"
+                  className="text-text-secondary whitespace-nowrap group-hover:text-[#2DA151] transition-colors"
                   style={{
                     fontFamily: 'Neue Haas Unica Pro, sans-serif',
                     fontWeight: 500,
@@ -98,9 +138,9 @@ const SupportContact = () => {
                 >
                   {option?.title}
                 </h3>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
         </div>
       </section>
@@ -125,7 +165,13 @@ const SupportContact = () => {
         <div className="relative z-10">
           <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[162px]">
             <div className="flex flex-col md:flex-row items-center md:items-end gap-[40px] md:gap-0">
-              <div className="relative w-full lg:w-[34%] flex justify-center lg:justify-start">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                className="relative w-full lg:w-[34%] flex justify-center lg:justify-start"
+              >
                 <div className="relative w-[280px] sm:w-[320px] lg:w-[364px] h-[440px] sm:h-[500px] lg:h-[572px]">
                   <img
                     src={phone}
@@ -138,10 +184,16 @@ const SupportContact = () => {
                     className="absolute top-[2px] left-[14px] right-[14px] bottom-[4px] w-[252px] sm:w-[292px] lg:w-[336px] h-[436px] sm:h-[496px] lg:h-[568px] object-cover rounded-[32px] lg:rounded-[40px]"
                   />
                 </div>
-              </div>
+              </motion.div>
 
               <div className="flex flex-col gap-[40px] sm:gap-[50px] lg:gap-[58px] w-full lg:flex-1 text-center lg:text-left lg:pl-[42px] lg:pb-15">
-                <div className="flex flex-col gap-[12px] sm:gap-[14px] lg:gap-[14px] lg:mt-[32px]">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                  className="flex flex-col gap-[12px] sm:gap-[14px] lg:gap-[14px] lg:mt-[32px]"
+                >
                   <h2
                     className="text-text-primary max-w-2xl mx-auto lg:mx-0"
                     style={{
@@ -166,19 +218,27 @@ const SupportContact = () => {
                   >
                     Need help with a ride, account, or payment? Our support team is here to assist you quickly and reliably.
                   </p>
-                </div>
+                </motion.div>
 
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start lg:ml-[30px]">
+                <motion.div
+                  variants={containerVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start lg:ml-[30px]"
+                >
                   {appDownloadLinks?.map((link) => (
-                    <div
+                    <motion.div
                       key={link?.id}
-                      className="flex items-center bg-background-tertiary rounded-md p-2 sm:p-[6px] lg:p-[8px] w-full sm:w-[280px] lg:w-[318px] cursor-pointer hover:shadow-md transition-shadow duration-300"
+                      variants={itemVariants}
+                      whileHover={{ y: -5, backgroundColor: "#ffffff" }}
+                      className="flex items-center bg-background-tertiary rounded-xl p-2 sm:p-[6px] lg:p-[8px] w-full sm:w-[280px] lg:w-[318px] cursor-pointer hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#2DA15140]"
                     >
                       <div className="flex-shrink-0">
                         <img
                           src={link?.icon}
                           alt={link?.title}
-                          className="w-[70px] h-[70px] sm:w-[78px] sm:h-[78px] lg:w-[84px] lg:h-[84px]"
+                          className="w-[70px] h-[70px] sm:w-[78px] sm:h-[78px] lg:w-[84px] lg:h-[84px] rounded-lg"
                         />
                       </div>
 
@@ -190,12 +250,12 @@ const SupportContact = () => {
                           Scan to download
                         </span>
                         <div className="flex justify-end mt-1">
-                          <IoIosArrowRoundForward className="w-4 h-4 sm:w-5 sm:h-5" />
+                          <IoIosArrowRoundForward className="w-5 h-5 sm:w-6 sm:h-6 text-[#2DA151]" />
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   ))}
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
