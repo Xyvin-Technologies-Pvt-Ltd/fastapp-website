@@ -66,8 +66,8 @@ const FeatureSection = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            whileHover={{ y: -10 }}
-                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[480px] flex flex-col transition-shadow hover:shadow-xl"
+                            // whileHover={{ y: -10 }}
+                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[480px] flex flex-col transition-shadow "
                         >
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[0].title}
@@ -89,8 +89,8 @@ const FeatureSection = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            whileHover={{ y: -10 }}
-                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[660px] flex flex-col transition-shadow hover:shadow-xl"
+                            // whileHover={{ y: -10 }}
+                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[660px] flex flex-col transition-shadow "
                         >
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[1].title}
@@ -115,8 +115,8 @@ const FeatureSection = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            whileHover={{ y: -10 }}
-                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[624px] flex flex-col transition-shadow hover:shadow-xl"
+                            // whileHover={{ y: -10 }}
+                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[624px] flex flex-col transition-shadow "
                         >
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[2].title}
@@ -139,8 +139,8 @@ const FeatureSection = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            whileHover={{ y: -10 }}
-                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[528px] flex flex-col transition-shadow hover:shadow-xl"
+                            // whileHover={{ y: -10 }}
+                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[528px] flex flex-col transition-shadow "
                         >
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[3].title}

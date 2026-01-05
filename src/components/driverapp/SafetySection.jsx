@@ -5,7 +5,7 @@ import { IoMdHelpBuoy } from "react-icons/io";
 import { PiSmileyStickerLight } from "react-icons/pi";
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
-
+import sos from '../../assets/images/safty-vector.webp';
 
 const SafetySection = () => {
   const leftSafetyFeatures = [
@@ -15,7 +15,7 @@ const SafetySection = () => {
       description: 'All drivers are verified to ensure a trusted ride experience.'
     },
     {
-      icon: <IoMdHelpBuoy className="w-6 h-6 flex-shrink-0" />,
+      icon: <img src={sos} alt="SOS icon" className="w-[26px] h-[26px] object-contain" />,
       title: 'SOS / emergency assistance',
       description: 'Get instant help with one tap in case of emergencies.'
     }
@@ -96,7 +96,7 @@ const SafetySection = () => {
                   className="bg-background-white border border-[#0000001A] rounded-xl p-[21px] sm:p-[25px] lg:p-[28px] flex flex-col gap-[22px] sm:gap-[26px] lg:gap-[30px] items-start flex-1 transition-shadow hover:shadow-lg"
                 >
                   <div className="w-[58px] h-[58px] bg-black rounded-[14px] flex items-center justify-center flex-shrink-0">
-                    <div className="text-white [&>svg]:w-[30px] [&>svg]:h-[30px]">
+                    <div className="text-white [&>svg]:w-[30px] [&>svg]:h-[30px] flex items-center justify-center">
                       {feature?.icon}
                     </div>
                   </div>
@@ -105,7 +105,7 @@ const SafetySection = () => {
                     <h3 className="font-neue text-2xl font-medium leading-[29px] text-text-secondary">
                       {feature?.title}
                     </h3>
-                    <p className="font-haas font-medium text-[18px] leading-[27px] text-[#ACACAC]">
+                    <p className="font-haas text-[18px] leading-[27px] text-[#ACACAC]">
                       {feature?.description}
                     </p>
                   </div>
@@ -144,7 +144,7 @@ const SafetySection = () => {
                   className="bg-background-white border border-[#0000001A] rounded-xl p-[21px] sm:p-[25px] lg:p-[28px] flex flex-col gap-[22px] sm:gap-[26px] lg:gap-[30px] items-start flex-1 transition-shadow hover:shadow-lg"
                 >
                   <div className="w-[58px] h-[58px] bg-black rounded-[14px] flex items-center justify-center flex-shrink-0">
-                    <div className="text-white [&>svg]:w-[30px] [&>svg]:h-[30px]">
+                    <div className="text-white [&>svg]:w-[30px] [&>svg]:h-[30px] flex items-center justify-center">
                       {feature?.icon}
                     </div>
                   </div>
@@ -152,7 +152,7 @@ const SafetySection = () => {
                     <h3 className="font-neue text-2xl font-medium leading-[29px] text-text-secondary">
                       {feature?.title}
                     </h3>
-                    <p className="font-haas font-medium text-[18px] leading-[27px] text-[#ACACAC]">
+                    <p className="font-haas text-[18px] leading-[27px] text-[#ACACAC]">
                       {feature?.description}
                     </p>
                   </div>
