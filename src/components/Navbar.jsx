@@ -53,7 +53,7 @@ const Navbar = () => {
                         </button>
                     </div>
 
-                    <div className="-mr-2 flex md:hidden">
+                    <div className="flex md:hidden">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                             className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-emerald-600 focus:outline-none"
