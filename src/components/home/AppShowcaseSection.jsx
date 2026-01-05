@@ -5,7 +5,7 @@ import { FiSmile } from "react-icons/fi";
 import { FiShare2 } from "react-icons/fi";
 import { PiUsersThreeBold } from "react-icons/pi";
 import { motion } from 'framer-motion';
-
+import app from '../../assets/images/appstore.webp';
 const AppShowcaseSection = () => {
     const showcaseItems = [
         {
@@ -274,9 +274,7 @@ const AppShowcaseSection = () => {
                 </a>
                 <a href="#" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
                     <div className="w-8 h-8 shrink-0 flex items-center justify-center">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.0673 3.37418C20.6543 3.37418 18.668 4.25684 17.7012 5.4043C16.8379 6.43164 16.1113 8.04492 16.1113 9.61328C16.1113 9.83203 16.1367 10.0469 16.1826 10.252C17.6543 10.1836 19.5043 9.25586 20.4414 8.07617C21.3145 6.99414 22.0195 5.39453 22.0195 3.86914C22.0195 3.65039 21.9941 3.43555 21.9482 3.23047C21.9839 3.22637 22.0303 3.22418 22.0673 3.22418C22.0673 3.22418 22.0673 3.37418 22.0673 3.37418ZM25.8672 17.6895C25.8457 14.8555 28.2168 13.4316 28.3242 13.3633C26.9668 11.4336 24.8496 11.1719 24.1113 11.1445C22.3457 10.9727 20.627 12.1582 19.7285 12.1582C18.8223 12.1582 17.4121 11.166 15.9395 11.1914C14.0273 11.2188 12.2461 12.2773 11.2617 13.9453C9.25391 17.3203 10.748 22.3086 12.7129 25.0781C13.6875 26.4258 14.8203 27.9316 16.3125 27.8769C17.7539 27.8184 18.2812 26.9746 20.0156 26.9746C21.75 26.9746 22.25 27.8769 23.7656 27.8516C25.3086 27.8223 26.2773 26.4844 27.2344 25.1094C28.3516 23.5137 28.8027 21.9648 28.8223 21.8867C28.7891 21.873 25.8984 20.7969 25.8672 17.6895Z" fill="#1A1A1A" />
-                        </svg>
+                       <img src={app} alt="App Store" className="w-full h-full object-contain" />
                     </div>
                     <div className="flex flex-col">
                         <span className="text-[13px] font-medium text-[#1A1A1A] leading-[13px] font-neue">Download on the</span>

@@ -3,6 +3,7 @@ import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
 import women from '../../assets/images/Women.webp';
 import clientsWrapper from '../../assets/images/Clients Wrapper.webp';
 import { motion } from 'framer-motion';
+import vector from '../../assets/images/Vector.webp';
 
 const HowWeWork = () => {
     const safetyPoints = [
@@ -73,7 +74,7 @@ const HowWeWork = () => {
                                     whileHover={{ scale: 1.1, backgroundColor: "#f0fdf4" }}
                                     className="w-[50px] h-[50px] shrink-0 border-t-[0.83px] border-[#11181133] border-x-[0.83px] border-b-[0.83px] bg-[#FAFAFA] rounded-[10px] flex items-center justify-center transition-colors"
                                 >
-                                    <HiOutlineChatBubbleLeftRight className="w-5 h-5 text-black" />
+                                    <img src={vector} alt="Icon" className="w-5 h-5 text-black" />
                                 </motion.div>
                                 <span className="font-neue font-medium text-[20px] leading-[29.97px] tracking-[-0.5px] text-black">
                                     {point.text}
