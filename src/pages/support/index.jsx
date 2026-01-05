@@ -232,7 +232,7 @@ const SupportContact = () => {
                       key={link?.id}
                       variants={itemVariants}
                       whileHover={{ y: -5, backgroundColor: "#ffffff" }}
-                      className="flex items-center bg-background-tertiary rounded-xl p-2 sm:p-[6px] lg:p-[8px] w-full sm:w-[280px] lg:w-[318px] cursor-pointer hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#2DA15140]"
+                      className="flex items-center bg-background-tertiary rounded-xl p-2 sm:p-[6px] lg:p-[8px] w-full sm:w-[280px] lg:w-[318px]  hover:shadow-md transition-all duration-300 border border-transparent "
                     >
                       <div className="flex-shrink-0">
                         <img
