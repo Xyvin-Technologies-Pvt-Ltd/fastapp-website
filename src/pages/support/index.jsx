@@ -142,7 +142,7 @@ const SupportContact = () => {
         </div>
       </section>
 
-      <section className="w-full pt-[60px] sm:pt-[80px] lg:pt-[80px] relative overflow-visible">
+      <section className="w-full pt-[50px] sm:pt-[60px] md:pt-[70px] lg:pt-[80px] relative overflow-visible">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -160,34 +160,34 @@ const SupportContact = () => {
         />
 
         <div className="relative z-10">
-          <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[162px]">
-            <div className="flex flex-col md:flex-row items-center md:items-end gap-[30px] md:gap-0">
+          <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[162px]">
+            <div className="flex flex-col md:flex-row items-start gap-[10px] md:gap-[20px] lg:gap-0">
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="flex-none w-auto flex justify-center lg:justify-start"
+                className="flex-none w-full md:w-auto flex justify-center md:justify-start"
               >
-                <div className="relative w-[280px] sm:w-[320px] lg:w-[364px] aspect-[364/572]">
+                <div className="relative w-[180px] h-[283px] sm:w-[220px] sm:h-[346px] md:w-[270px] md:h-[425px] lg:w-[364px] lg:h-[500px]">
                   <img
                     src={phone}
                     alt="Phone Frame"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute top-0 left-0 w-full h-full object-cover object-top"
                   />
                 </div>
               </motion.div>
 
-              <div className="flex flex-col gap-[30px] sm:gap-[40px] lg:gap-[48px] w-full text-center lg:text-left lg:pl-[42px] lg:pb-[15px]">
+              <div className="flex flex-col gap-[20px] sm:gap-[28px] md:gap-[36px] lg:gap-[48px] w-full text-center md:text-left md:pl-[30px] lg:pl-[42px] pb-[30px] md:pb-[50px] lg:pb-[15px] mt-[10px] md:mt-0">
                 <motion.div
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                  className="flex flex-col gap-[12px] sm:gap-[14px] lg:gap-[14px] lg:mt-[32px]"
+                  className="flex flex-col gap-[12px] sm:gap-[14px] md:mt-0 lg:mt-[70px]"
                 >
                   <h2
-                    className="text-text-primary max-w-2xl mx-auto lg:mx-0 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px]"
+                    className="text-text-primary max-w-2xl mx-auto md:mx-0 text-[28px] sm:text-[36px] md:text-[42px] lg:text-[56px]"
                     style={{
                       fontFamily: 'Plus Jakarta Sans, sans-serif',
                       fontWeight: 600,
@@ -198,12 +198,11 @@ const SupportContact = () => {
                     Get Where You are Going — Faster & Smarter
                   </h2>
                   <p
-                    className="text-text-primary w-full max-w-[84%] mx-auto lg:mx-0 lg:max-w-none"
+                    className="text-text-primary w-[84%] mx-auto md:mx-0 lg:max-w-none text-[14px] sm:text-[15px] md:text-[16px]"
                     style={{
                       fontFamily: 'Plus Jakarta Sans, sans-serif',
                       fontWeight: 400,
-                      fontSize: '16px',
-                      lineHeight: '27.2px',
+                      lineHeight: '170%',
                       letterSpacing: '0%'
                     }}
                   >
@@ -216,20 +215,20 @@ const SupportContact = () => {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start lg:ml-[30px]"
+                  className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center md:justify-start md:ml-0 lg:ml-0"
                 >
                   {appDownloadLinks?.map((link) => (
                     <motion.div
                       key={link?.id}
                       variants={itemVariants}
                       whileHover={{ y: -5, backgroundColor: "#ffffff" }}
-                      className="flex items-center bg-background-tertiary rounded-xl p-2 sm:p-[6px] lg:p-[8px] w-full sm:w-[280px] lg:w-[318px]  hover:shadow-md transition-all duration-300 border border-transparent "
+                      className="flex items-center bg-background-tertiary rounded-xl p-2 sm:p-[6px] lg:p-[8px] w-full sm:w-[260px] md:w-[280px] lg:w-[318px] hover:shadow-md transition-all duration-300 border border-transparent"
                     >
                       <div className="flex-shrink-0">
                         <img
                           src={link?.icon}
                           alt={link?.title}
-                          className="w-[70px] h-[70px] sm:w-[78px] sm:h-[78px] lg:w-[84px] lg:h-[84px] rounded-lg"
+                          className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[78px] md:h-[78px] lg:w-[84px] lg:h-[84px] rounded-lg"
                         />
                       </div>
 
