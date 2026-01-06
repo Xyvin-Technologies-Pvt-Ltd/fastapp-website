@@ -12,15 +12,15 @@ const FAQSection = () => {
     },
     {
       question: 'How do drivers get paid?',
-      answer: 'Sign up in the app, upload documents, and start driving.'
+      answer: 'Drivers are paid for each completed ride. Earnings are transferred to your registered bank account or wallet based on the payment method selected by the rider.'
     },
     {
       question: 'Can I choose my working hours?',
-      answer: 'Sign up in the app, upload documents, and start driving.'
+      answer: 'Yes, you are free to go online and offline anytime. There are no fixed working hours — you drive whenever it’s convenient for you.'
     },
     {
       question: 'How do I receive ride requests?',
-      answer: 'Sign up in the app, upload documents, and start driving.'
+      answer: 'When you are online in the app, nearby ride requests will automatically appear on your screen. You can review the details and accept the ride.'
     }
   ];
 
@@ -52,7 +52,7 @@ const FAQSection = () => {
 
   return (
     <section className="w-full bg-white py-[70px] sm:py-[82px] lg:py-[101px] overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[100px]">
         <div className="flex flex-col gap-[42px] sm:gap-[49px] lg:gap-[56px] items-start  mb-4">
           <motion.h2
             initial={{ opacity: 0, x: -30 }}
@@ -104,7 +104,7 @@ const FAQSection = () => {
                       className="overflow-hidden"
                     >
                       <div className="pb-[23px]">
-                        <p className="font-haas font-normal text-[18px] leading-[23.8px] text-[#ACACAC]">
+                        <p className="font-haas font-normal text-[18px] leading-[23.8px] text-[#ACACAC] w-[90%]">
                           {faq.answer}
                         </p>
                       </div>

@@ -8,19 +8,19 @@ const FAQSection = () => {
   const faqs = [
     {
       question: 'How do I know the fare before booking?',
-      answer: 'You’ll see the estimated fare and ETA before confirming.'
+      answer: 'You will see the estimated fare and the expected arrival time before confirming.'
     },
     {
       question: 'Are drivers verified?',
-      answer: 'You’ll see the estimated fare and ETA before confirming.'
+      answer: 'Yes. All drivers go through a verification process which includes ID validation, background checks, and document verification before they are allowed to drive.'
     },
     {
       question: 'Can I track my ride?',
-      answer: 'You’ll see the estimated fare and ETA before confirming.'
+      answer: 'Absolutely. Once your ride is confirmed, you can track your driver’s live location in real-time until you reach your destination.'
     },
     {
       question: 'What if I face an issue during the ride?',
-      answer: 'You’ll see the estimated fare and ETA before confirming.'
+      answer: 'If you face any issue during your ride, you can contact support through the app or use the in-app emergency options for immediate help.'
     }
   ];
 
@@ -52,7 +52,7 @@ const FAQSection = () => {
 
   return (
     <section className="w-full bg-white py-[70px] sm:py-[82px] lg:py-[94px] overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[100px]">
         <div className="flex flex-col gap-[42px] sm:gap-[49px] lg:gap-[56px] items-start  mb-4">
           <motion.h2
             initial={{ opacity: 0, x: -30 }}
@@ -104,7 +104,7 @@ const FAQSection = () => {
                       className="overflow-hidden"
                     >
                       <div className="pb-[23px]">
-                        <p className="font-haas font-normal text-[18px] leading-[23.8px] text-[#ACACAC]">
+                        <p className="font-haas font-normal text-[18px] leading-[23.8px] text-[#ACACAC] w-[90%]">
                           {faq.answer}
                         </p>
                       </div>

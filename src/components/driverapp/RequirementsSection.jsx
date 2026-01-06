@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../assets/images/drivecar.jpg';
+import image from '../../assets/images/drivecar.webp';
 import { BiMessageRoundedDots } from "react-icons/bi";
 import { FiSmile } from "react-icons/fi";
 import { FiShare2 } from "react-icons/fi";
