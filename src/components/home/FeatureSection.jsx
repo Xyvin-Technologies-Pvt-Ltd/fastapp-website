@@ -1,4 +1,4 @@
-import image1 from '../../assets/images/splash-screens.webp';
+import image1 from '../../assets/images/img1-feat.webp';
 import image2 from '../../assets/images/card-image.webp';
 import image3 from '../../assets/images/CardImage3.webp';
 import image4 from '../../assets/images/single-ser.webp';
@@ -75,14 +75,14 @@ const FeatureSection = () => {
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[0].title}
                             </h3>
-                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
+                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-2 md:mb-6">
                                 {features[0].description}
                             </p>
                             <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 flex items-center justify-center p-4">
                                 <img
                                     src={features[0].image}
                                     alt={features[0].title}
-                                    className="w-full h-[280px] md:h-[320px] object-contain rounded-[32px]"
+                                    className="w-full h-[200px] md:h-[320px] object-contain"
                                 />
                             </div>
                         </motion.div>
@@ -98,18 +98,18 @@ const FeatureSection = () => {
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[1].title}
                             </h3>
-                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
+                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-2 md:mb-6">
                                 {features[1].description}
                             </p>
                             <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 bg-[#FAFAFA] p-4 flex items-end justify-center">
-                                <div className="flex-1 h-[280px] md:h-[320px] flex items-center justify-center">
+                                <div className="flex-1 h-[200px] md:h-[320px] flex items-center justify-center">
                                     <img
                                         src={image21}
                                         alt={features[1].title}
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
-                                <div className="flex-1 h-[280px] md:h-[320px] flex items-center justify-center -ml-8 md:-ml-17 py-1 md:py-4">
+                                <div className="flex-1 h-[200px] md:h-[320px] flex items-center justify-center -ml-8 md:-ml-17 py-1 md:py-4">
                                     <img
                                         src={image22}
                                         alt={features[1].title}
@@ -128,19 +128,19 @@ const FeatureSection = () => {
                             whileInView="visible"
                             viewport={{ once: true }}
                             // whileHover={{ y: -10 }}
-                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-8 w-full md:w-[624px] flex flex-col transition-shadow "
+                            className="bg-[#F8F8F8] rounded-[32px] p-6 md:p-10 w-full md:w-[624px] flex flex-col transition-shadow "
                         >
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[2].title}
                             </h3>
-                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
+                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-2 md:mb-6">
                                 {features[2].description}
                             </p>
-                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 bg-white flex items-center justify-center p-4">
+                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 bg-white flex items-center justify-center p-8">
                                 <img
                                     src={image31}
                                     alt={features[2].title}
-                                    className="w-full h-[280px] md:h-[320px] object-contain"
+                                    className="w-full h-[200px] md:h-[320px] object-contain"
                                 />
                             </div>
                         </motion.div>
@@ -157,14 +157,14 @@ const FeatureSection = () => {
                             <h3 className="font-neue font-medium text-[24px] leading-[33.6px] tracking-[-0.5px] text-[#1A1A1A] mb-3">
                                 {features[3].title}
                             </h3>
-                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
+                            <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-2 md:mb-6">
                                 {features[3].description}
                             </p>
                             <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 flex items-center justify-center p-4">
                                 <img
                                     src={features[3].image}
                                     alt={features[3].title}
-                                    className="w-full h-[280px] md:h-[320px] object-contain"
+                                    className="w-full h-[200px] md:h-[320px] object-contain"
                                 />
                             </div>
                         </motion.div>
