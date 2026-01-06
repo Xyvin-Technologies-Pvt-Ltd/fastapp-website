@@ -136,7 +136,7 @@ const FeatureSection = () => {
                             <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-2 md:mb-6">
                                 {features[2].description}
                             </p>
-                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 bg-white flex items-center justify-center p-8">
+                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 bg-white flex items-center justify-center md:p-8 p-4">
                                 <img
                                     src={image31}
                                     alt={features[2].title}
