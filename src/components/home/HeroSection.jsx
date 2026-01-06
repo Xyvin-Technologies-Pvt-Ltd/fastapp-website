@@ -51,13 +51,19 @@ const HeroSection = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <button className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black border-gray-300 px-6 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition active:scale-95">
+                    <a href="https://apps.apple.com/in/app/fast-app-rider/id6754153644"
+                        target="_blank"
+                        className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black border-gray-300 px-6 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition active:scale-95 cursor-pointer"
+                    >
                         <FaApple className="text-[24px]" />
                         App Store
-                    </button>
-                    <button className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black  border-gray-300 px-5 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition active:scale-95">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.xyvin.fastapp"
+                        target="_blank"
+                        className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black border-gray-300 px-5 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition active:scale-95 cursor-pointer"
+                    >
                         <FaGooglePlay className="text-[20px]" />Google Play
-                    </button>
+                    </a>
                 </motion.div>
             </div>
         </div>

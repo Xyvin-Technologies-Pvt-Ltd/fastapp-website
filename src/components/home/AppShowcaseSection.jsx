@@ -257,7 +257,7 @@ const AppShowcaseSection = () => {
                 transition={{ duration: 0.6 }}
                 className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8"
             >
-                <a href="#" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
+                <a href="https://play.google.com/store/apps/details?id=com.xyvin.fastdriver" target="_blank" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
                     <div className="w-8 h-8 shrink-0 flex items-center justify-center">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5126 15.1764L4.85156 3.51534C5.03541 3.42466 5.23963 3.37418 5.45156 3.37418C5.64501 3.37418 5.82902 3.41617 5.99616 3.49132L21.3749 12.2353L16.5126 15.1764Z" fill="#00E676" />
@@ -272,9 +272,9 @@ const AppShowcaseSection = () => {
                         <span className="text-[18px] font-medium text-[#1A1A1A] leading-[27px] font-neue">Google Play</span>
                     </div>
                 </a>
-                <a href="#" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
+                <a href="https://apps.apple.com/in/app/fast-app-driver/id6754153756" target="_blank" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
                     <div className="w-8 h-8 shrink-0 flex items-center justify-center">
-                       <img src={app} alt="App Store" className="w-full h-full object-contain" />
+                        <img src={app} alt="App Store" className="w-full h-full object-contain" />
                     </div>
                     <div className="flex flex-col">
                         <span className="text-[13px] font-medium text-[#1A1A1A] leading-[13px] font-neue">Download on the</span>
