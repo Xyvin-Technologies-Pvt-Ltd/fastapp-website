@@ -3,6 +3,9 @@ import image2 from '../../assets/images/card-image.webp';
 import image3 from '../../assets/images/CardImage3.webp';
 import image4 from '../../assets/images/single-ser.webp';
 import { motion } from 'framer-motion';
+import image21 from '../../assets/images/feat-img1.webp';
+import image22 from '../../assets/images/feat-img2.webp';
+import image31 from '../../assets/images/img4.webp';
 
 const FeatureSection = () => {
     const features = [
@@ -54,7 +57,7 @@ const FeatureSection = () => {
                     <h2 className="text-4xl md:text-5xl lg:text-[48px] font-bold text-black mb-4 -tracking-[0.8px]">
                         Top Features of <span className="text-[#2DA151] italic">FastApp</span>
                     </h2>
-                    <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                    <p className="text-[#7E7E7E] text-lg max-w-2xl mx-auto">
                         FastApp makes booking rides faster, safer, and more transparent—so you can travel with confidence.
                     </p>
                 </motion.div>
@@ -75,11 +78,11 @@ const FeatureSection = () => {
                             <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
                                 {features[0].description}
                             </p>
-                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0">
+                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 flex items-center justify-center p-4">
                                 <img
                                     src={features[0].image}
                                     alt={features[0].title}
-                                    className="w-full h-[280px] md:h-[320px] object-cover"
+                                    className="w-full h-[280px] md:h-[320px] object-contain rounded-[32px]"
                                 />
                             </div>
                         </motion.div>
@@ -98,12 +101,21 @@ const FeatureSection = () => {
                             <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
                                 {features[1].description}
                             </p>
-                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0">
-                                <img
-                                    src={features[1].image}
-                                    alt={features[1].title}
-                                    className="w-full h-[280px] md:h-[320px] object-cover"
-                                />
+                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 bg-[#FAFAFA] p-4 flex items-end justify-center">
+                                <div className="flex-1 h-[280px] md:h-[320px] flex items-center justify-center">
+                                    <img
+                                        src={image21}
+                                        alt={features[1].title}
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
+                                <div className="flex-1 h-[280px] md:h-[320px] flex items-center justify-center -ml-8 md:-ml-17 py-1 md:py-4">
+                                    <img
+                                        src={image22}
+                                        alt={features[1].title}
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
                             </div>
                         </motion.div>
                     </div>
@@ -124,11 +136,11 @@ const FeatureSection = () => {
                             <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
                                 {features[2].description}
                             </p>
-                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0">
+                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 bg-white flex items-center justify-center p-4">
                                 <img
-                                    src={features[2].image}
+                                    src={image31}
                                     alt={features[2].title}
-                                    className="w-full h-[280px] md:h-[320px] object-cover"
+                                    className="w-full h-[280px] md:h-[320px] object-contain"
                                 />
                             </div>
                         </motion.div>
@@ -148,11 +160,11 @@ const FeatureSection = () => {
                             <p className="font-plus-jakarta font-normal text-[16px] leading-[27.2px] text-[#7E7E7E] mb-6">
                                 {features[3].description}
                             </p>
-                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0">
+                            <div className="w-full overflow-hidden rounded-2xl flex-shrink-0 flex items-center justify-center p-4">
                                 <img
                                     src={features[3].image}
                                     alt={features[3].title}
-                                    className="w-full h-[280px] md:h-[320px] object-cover"
+                                    className="w-full h-[280px] md:h-[320px] object-contain"
                                 />
                             </div>
                         </motion.div>
