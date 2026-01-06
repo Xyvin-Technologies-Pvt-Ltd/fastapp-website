@@ -62,7 +62,7 @@ const FAQSection = () => {
             className="text-[36px] sm:text-[42px] lg:text-[48px] font-normal leading-[43px] sm:leading-[50px] lg:leading-[58px] capitalize text-text-secondary font-haas"
           >
             <span>FAQ</span>
-            <span className="text-[#2DA151]"> (Drivers)</span>
+            <span className="text-[#2DA151]"> (Riders)</span>
           </motion.h2>
 
           <motion.div
