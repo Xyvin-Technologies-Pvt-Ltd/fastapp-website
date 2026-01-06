@@ -2,8 +2,8 @@ import React from 'react';
 import { MdEmail } from "react-icons/md";
 import { BsChatFill } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
-import ui from '../../assets/images/ui.webp'
-import phone from '../../assets/images/mobile-ui.webp'
+import ui from '../../assets/images/newui.webp'
+import phone from '../../assets/images/mobileui.webp'
 import bg from '../../assets/images/bg.png'
 import scanner1 from '../../assets/images/scanner1.webp'
 import scanner2 from '../../assets/images/scanner2.webp'
@@ -16,19 +16,16 @@ const SupportContact = () => {
       id: 'email',
       icon: <MdEmail style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
       title: 'Email support',
-      description: 'Get detailed help via email support'
     },
     {
       id: 'chat',
       icon: <BsChatFill style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
       title: 'In-app chat',
-      description: 'Chat with our support team instantly'
     },
     {
       id: 'phone',
       icon: <FaPhoneAlt style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
       title: 'Phone support',
-      description: 'Speak directly with our support team'
     }
   ];
 
@@ -145,7 +142,7 @@ const SupportContact = () => {
         </div>
       </section>
 
-      <section className="w-full pt-[80px] sm:pt-[100px] lg:pt-[102px] relative overflow-hidden">
+      <section className="w-full pt-[60px] sm:pt-[80px] lg:pt-[80px] relative overflow-visible">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -164,29 +161,24 @@ const SupportContact = () => {
 
         <div className="relative z-10">
           <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[162px]">
-            <div className="flex flex-col md:flex-row items-center md:items-end gap-[40px] md:gap-0">
+            <div className="flex flex-col md:flex-row items-center md:items-end gap-[30px] md:gap-0">
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="relative w-full lg:w-[34%] flex justify-center lg:justify-start"
+                className="flex-none w-auto flex justify-center lg:justify-start"
               >
-                <div className="relative w-[280px] sm:w-[320px] lg:w-[364px] h-[440px] sm:h-[500px] lg:h-[572px]">
+                <div className="relative w-[280px] sm:w-[320px] lg:w-[364px] aspect-[364/572]">
                   <img
                     src={phone}
                     alt="Phone Frame"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
-                  <img
-                    src={ui}
-                    alt="FastApp Interface"
-                    className="absolute top-[2px] left-[14px] right-[14px] bottom-[4px] w-[252px] sm:w-[292px] lg:w-[336px] h-[436px] sm:h-[496px] lg:h-[568px] object-cover rounded-[32px] lg:rounded-[40px]"
-                  />
                 </div>
               </motion.div>
 
-              <div className="flex flex-col gap-[40px] sm:gap-[50px] lg:gap-[58px] w-full lg:flex-1 text-center lg:text-left lg:pl-[42px] lg:pb-15">
+              <div className="flex flex-col gap-[30px] sm:gap-[40px] lg:gap-[48px] w-full text-center lg:text-left lg:pl-[42px] lg:pb-[15px]">
                 <motion.div
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -195,19 +187,18 @@ const SupportContact = () => {
                   className="flex flex-col gap-[12px] sm:gap-[14px] lg:gap-[14px] lg:mt-[32px]"
                 >
                   <h2
-                    className="text-text-primary max-w-2xl mx-auto lg:mx-0"
+                    className="text-text-primary max-w-2xl mx-auto lg:mx-0 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px]"
                     style={{
                       fontFamily: 'Plus Jakarta Sans, sans-serif',
                       fontWeight: 600,
-                      fontSize: '56px',
-                      lineHeight: '67.2px',
+                      lineHeight: '120%',
                       letterSpacing: '-2.5px'
                     }}
                   >
                     Get Where You are Going — Faster & Smarter
                   </h2>
                   <p
-                    className="text-text-primary w-full sm:w-[84%] mx-auto lg:mx-0"
+                    className="text-text-primary w-full max-w-[84%] mx-auto lg:mx-0 lg:max-w-none"
                     style={{
                       fontFamily: 'Plus Jakarta Sans, sans-serif',
                       fontWeight: 400,
