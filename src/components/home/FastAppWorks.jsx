@@ -18,7 +18,7 @@ const FastAppWorks = () => {
                 </div>
 
                 <h2 className="text-4xl md:text-5xl lg:text-[62px] font-semibold text-[#0D0D0D] text-center mb-6 !leading-[1.1]">
-                    Get a Ride in Just a <span className="text-[#49BA6C] italic font-normal">Few Steps</span>
+                    Get a Ride in Just a <span className="text-[#2DA151] italic">Few Steps</span>
                 </h2>
 
                 <p className="max-w-2xl text-center mb-16 font-haas" style={{

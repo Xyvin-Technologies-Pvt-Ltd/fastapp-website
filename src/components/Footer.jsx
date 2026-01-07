@@ -82,7 +82,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8">
             <div className="text-center sm:text-left order-2 sm:order-1">
               <span className="text-base font-normal text-text-primary">
-                © 2025 Fast App by . All rights reserved.
+                &copy; 2026 Fast App. All rights reserved.
               </span>
             </div>
 

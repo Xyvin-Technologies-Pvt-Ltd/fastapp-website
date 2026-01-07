@@ -5,6 +5,7 @@ import AppShowcaseSection from '../../components/home/AppShowcaseSection';
 import DownloadSection from '../../components/driverapp/AppDownloadSection';
 import MobileShowcaseSection from '../../components/home/MobileSecton';
 import FastAppWorks from '../../components/home/FastAppWorks';
+import WhatsAppButton from '../../components/WhatsAppButton';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <AppShowcaseSection />
             <FastAppWorks />
             <DownloadSection />
+            <WhatsAppButton />
         </div>
     );
 };

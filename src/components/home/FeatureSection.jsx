@@ -54,10 +54,10 @@ const FeatureSection = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl lg:text-[48px] font-bold text-black mb-4 -tracking-[0.8px]">
+                    <h2 className="font-neue text-4xl md:text-5xl lg:text-[56px] font-medium text-black mb-4 -tracking-[0.5px]">
                         Top Features of <span className="text-[#2DA151] italic">FastApp</span>
                     </h2>
-                    <p className="text-[#7E7E7E] text-lg max-w-2xl mx-auto">
+                    <p className="text-[#7E7E7E] text-lg max-w-2xl mx-auto font-haas">
                         FastApp makes booking rides faster, safer, and more transparent—so you can travel with confidence.
                     </p>
                 </motion.div>

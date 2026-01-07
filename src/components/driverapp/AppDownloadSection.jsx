@@ -56,7 +56,7 @@ const AppDownloadSection = () => {
               <h2 className="text-[32px] sm:text-[42px] lg:text-[48px] font-bold leading-[38px] sm:leading-[50px] lg:leading-[57px] text-center text-text-secondary">
                 <span>Get Where You are </span>
                 <span>Going — </span>
-                <span className="italic text-[#2ca050]">Faster & Smarter</span>
+                <span className="italic text-[#2DA151]">Faster & Smarter</span>
               </h2>
 
               <p className="text-lg font-medium leading-[27px] text-center text-text-accent w-full">
