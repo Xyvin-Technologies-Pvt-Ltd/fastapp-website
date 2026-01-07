@@ -91,8 +91,7 @@ const SupportContact = () => {
               Contact FastApp Support
             </h1>
             <p className="text-base text-[#7E7E7E] text-[18px] font-normal leading-[21px] text-text-muted max-w-2xl">
-              If you can not find what you are looking for, our support team is ready to help.
-            </p>
+              If you can’t find what you’re looking for, our support team is ready to help.            </p>
           </motion.div>
         </div>
       </section>
