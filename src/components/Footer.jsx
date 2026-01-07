@@ -88,7 +88,14 @@ const Footer = () => {
 
             <div className="text-center sm:text-right order-1 sm:order-2">
               <span className="text-base font-normal text-text-primary">
-                Designed & Developed by Xyvin Technologies
+                Designed & Developed by{' '}
+                <a
+                  href="https://www.xyvin.com/"
+                  target="_blank"
+                  className="hover:text-[#2DA151]"
+                >
+                  Xyvin Technologies
+                </a>
               </span>
             </div>
           </div>

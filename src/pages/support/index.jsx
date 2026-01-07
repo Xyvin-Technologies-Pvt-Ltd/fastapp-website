@@ -16,16 +16,22 @@ const SupportContact = () => {
       id: 'email',
       icon: <MdEmail style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
       title: 'Email support',
+      contact: 'support@fastrideapp.com',
+      link: 'mailto:support@fastrideapp.com'
     },
     {
       id: 'chat',
       icon: <BsChatFill style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
-      title: 'In-app chat',
+      title: 'WhatsApp chat',
+      contact: '00249912200031',
+      link: 'https://wa.me/00249912200031'
     },
     {
       id: 'phone',
       icon: <FaPhoneAlt style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
       title: 'Phone support',
+      contact: '66700',
+      link: 'tel:66700'
     }
   ];
 
@@ -101,10 +107,12 @@ const SupportContact = () => {
             className="flex flex-col sm:flex-row gap-[40px] sm:gap-[60px] lg:gap-[100px] justify-center items-stretch"
           >
             {supportOptions?.map(option => (
-              <motion.div
+              <motion.a
                 key={option?.id}
+                href={option?.link}
+                target={option?.id === 'chat' ? '_blank' : undefined}
                 variants={itemVariants}
-                whileHover={{ y: -8, shadow: "0 10px 30px -10px rgba(0,0,0,0.1)" }}
+                whileHover={{ y: -1, shadow: "0 10px 30px -10px rgba(0,0,0,0.1)" }}
                 className="
                         group flex flex-col items-start cursor-pointer
                         bg-[#FAFAFA]
@@ -113,7 +121,7 @@ const SupportContact = () => {
                         shadow-[0_0_4px_0_#0000000A]
                         pl-[36px] pr-[36px] pt-[35px] pb-[30px]
                         hover:border-[#2DA15140]
-                        transition-all duration-300
+                        no-underline
                     "
               >
                 <motion.div
@@ -124,9 +132,8 @@ const SupportContact = () => {
                 </motion.div>
 
                 <h3
-                  className="text-text-secondary whitespace-nowrap group-hover:text-[#2DA151] transition-colors"
+                  className="font-haas whitespace-nowrap group-hover:text-[#2DA151] transition-colors mb-[8px]"
                   style={{
-                    fontFamily: 'Neue Haas Unica Pro, sans-serif',
                     fontWeight: 500,
                     fontSize: '22px',
                     lineHeight: '120%',
@@ -135,7 +142,18 @@ const SupportContact = () => {
                 >
                   {option?.title}
                 </h3>
-              </motion.div>
+
+                <p
+                  className="font-haas text-[#7E7E7E] group-hover:text-[#2DA151] transition-colors"
+                  style={{
+                    fontWeight: 400,
+                    fontSize: '15px',
+                    lineHeight: '140%'
+                  }}
+                >
+                  {option?.contact}
+                </p>
+              </motion.a>
             ))}
           </motion.div>
 
