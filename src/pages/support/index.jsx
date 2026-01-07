@@ -23,8 +23,8 @@ const SupportContact = () => {
       id: 'chat',
       icon: <BsChatFill style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
       title: 'WhatsApp chat',
-      contact: '00249912200031',
-      link: 'https://wa.me/00249912200031'
+      contact: '+249912200031',
+      link: 'https://wa.me/249912200031'
     },
     {
       id: 'phone',

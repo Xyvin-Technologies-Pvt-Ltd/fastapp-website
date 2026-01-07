@@ -1,5 +1,5 @@
 import React from 'react';
-import driverapp from '../../assets/images/hero-rd.webp';
+import driverapp from '../../assets/images/drivehero.webp';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
