@@ -23,7 +23,7 @@ const FastAppWorks = () => {
 
                 <p className="max-w-2xl text-center mb-16 font-haas" style={{
                     color: '#7E7E7E',
-                    fontWeight: '400',
+                    fontWeight: '500',
                     fontSize: '18px',
                     lineHeight: '27px',
                     textAlign: 'center'

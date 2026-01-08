@@ -53,13 +53,13 @@ const AppDownloadSection = () => {
               transition={{ duration: 0.8 }}
               className="flex flex-col gap-2 items-center px-4 sm:px-[72px] lg:px-[82px]"
             >
-              <h2 className="text-[32px] sm:text-[42px] lg:text-[48px] font-bold leading-[38px] sm:leading-[50px] lg:leading-[57px] text-center text-text-secondary">
+              <h2 className="text-[32px] font-haas sm:text-[42px] lg:text-[48px] font-medium leading-[38px] sm:leading-[50px] lg:leading-[57px] text-center text-text-secondary">
                 <span>Get Where You are </span>
                 <span>Going — </span>
                 <span className="italic text-[#2DA151]">Faster & Smarter</span>
               </h2>
 
-              <p className="text-lg font-medium leading-[27px] text-center text-text-accent w-full">
+              <p className="text-lg text-[#7E7E7E] font-medium leading-[27px] text-center text-text-accent w-full">
                 Book rides instantly with real-time tracking, transparent pricing, and trusted drivers — all in one app.
               </p>
             </motion.div>

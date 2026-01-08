@@ -45,7 +45,7 @@ const FeatureSection = () => {
     };
 
     return (
-        <section className="pt-20 pb-0 md:pb-20 px-6 md:px-12 lg:px-[120px] bg-white font-neue">
+        <section className="pt-20 pb-0 md:pb-10 px-6 md:px-12 lg:px-[120px] bg-white font-neue">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const FeatureSection = () => {
                     <h2 className="font-neue text-4xl md:text-5xl lg:text-[56px] font-medium text-black mb-4 -tracking-[0.5px]">
                         Top Features of <span className="text-[#2DA151] italic">FastApp</span>
                     </h2>
-                    <p className="text-[#7E7E7E] text-lg max-w-2xl mx-auto font-haas">
+                    <p className="text-[#7E7E7E] text-lg max-w-2xl mx-auto font-[500] font-haas">
                         FastApp makes booking rides faster, safer, and more transparent—so you can travel with confidence.
                     </p>
                 </motion.div>

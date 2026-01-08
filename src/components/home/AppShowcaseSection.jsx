@@ -89,7 +89,7 @@ const AppShowcaseSection = () => {
     return (
         <section className="py-20 bg-white font-neue">
             {/* First Section */}
-            <div className="py-12">
+            <div className="pb-0 md:pb-20">
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-[120px]">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
                         <motion.div
