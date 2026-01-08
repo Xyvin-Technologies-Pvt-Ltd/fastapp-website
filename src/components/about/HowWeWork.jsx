@@ -51,7 +51,7 @@ const HowWeWork = () => {
                         <span className="text-[#ACACAC]">Comes First</span>
                     </div>
                     <h2 className="font-neue font-medium text-[40px] md:text-[48px] leading-[60px] tracking-[-0.5px] text-center">
-                        Safety is at the <span className="text-[#2DA151]">heart of FastApp.</span>
+                        Safety is at the <span className="text-[#2DA151] italic">heart of FastApp.</span>
                     </h2>
                 </motion.div>
 

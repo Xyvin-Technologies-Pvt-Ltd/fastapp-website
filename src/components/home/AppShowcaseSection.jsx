@@ -147,7 +147,7 @@ const AppShowcaseSection = () => {
                                             key={fIndex}
                                             variants={itemVariants}
                                             whileHover={{ y: -5, shadow: "0 10px 30px -15px rgba(0,0,0,0.1)" }}
-                                            className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#eeeeee] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col justify-between gap-4 h-full"
+                                            className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#0000001A] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col  gap-4 h-full"
                                         >
                                             <div className="flex items-center gap-3">
                                                 <div className="text-black shrink-0">
@@ -206,7 +206,7 @@ const AppShowcaseSection = () => {
                                             key={fIndex}
                                             variants={itemVariants}
                                             whileHover={{ y: -5 }}
-                                            className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#eeeeee] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col justify-between gap-4 h-full"
+                                            className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(232,232,232,0.14)_0%,rgba(221,221,221,0.14)_100%)] border border-[#0000001A] backdrop-blur-[10px] rounded-[20px] p-6 flex flex-col gap-4 h-full"
                                         >
                                             <div className="flex items-center gap-3">
                                                 <div className="text-black shrink-0">

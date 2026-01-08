@@ -21,8 +21,8 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white py-12 sm:py-16 lg:py-20">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[120px]">
-        <div className="flex flex-col gap-12 lg:gap-24">
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8">
+        <div className="flex flex-col gap-12 lg:gap-15">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-stretch gap-12 lg:gap-8">
             <div className="flex flex-col lg:justify-between w-full lg:w-1/2 lg:min-h-[200px] gap-8 lg:gap-0">
               <div>
                 <img

@@ -29,14 +29,14 @@ const AboutSection = () => {
                     </motion.h2>
                 </div>
 
-                <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-20">
-                    <div className="flex flex-col justify-between lg:w-[55%]">
+                <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-10">
+                    <div className="flex flex-col justify-between lg:w-[45%]">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
-                            className="font-haas font-bold text-[16px] leading-[24px] tracking-[-0.8px] uppercase"
+                            className="font-haas font-bold text-[16px] leading-[24px] tracking-[-0.8px] "
                         >
                             Who <span className="text-[#7E7E7E] font-[700]">We Are?</span>
                         </motion.div>
@@ -58,7 +58,7 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.3 }}
-                        className="flex flex-col gap-6 lg:w-[42%] font-haas font-medium text-[16px] lg:text-[18px] leading-[24px] text-[#7E7E7E] lg:text-right lg:items-end"
+                        className="flex flex-col gap-6 lg:w-[52%] font-haas font-medium text-[16px] lg:text-[18px] leading-[24px] text-[#7E7E7E] lg:text-right lg:items-end"
                     >
                         <div className="max-w-[600px] text-left">
                             <p className="mb-10 font-haas">

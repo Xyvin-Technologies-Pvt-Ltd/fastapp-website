@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const MobileShowcaseSection = () => {
   return (
-    <section className="w-full bg-white pt-10 md:pt-[105px]">
+    <section className="w-full bg-white pt-10 md:pt-[70px]">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

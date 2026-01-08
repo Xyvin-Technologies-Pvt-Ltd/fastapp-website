@@ -68,9 +68,9 @@ const SafetySection = () => {
             transition={{ duration: 0.8 }}
             className="flex flex-col gap-7 items-center px-1 sm:px-2 lg:px-[6px]"
           >
-            <h2 className="text-[36px] sm:text-[42px] lg:text-[48px] font-medium italic leading-[43px] sm:leading-[50px] lg:leading-[58px] text-center">
+            <h2 className="text-[36px] sm:text-[42px] lg:text-[48px] font-medium leading-[43px] sm:leading-[50px] lg:leading-[58px] text-center">
               <span >Safety for</span>
-              <span className="text-[#2DA151]"> Riders</span>
+              <span className="text-[#2DA151] italic"> Riders</span>
             </h2>
 
             <div className="mb-9">
