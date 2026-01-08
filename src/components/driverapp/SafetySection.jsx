@@ -59,7 +59,7 @@ const SafetySection = () => {
 
   return (
     <section className="w-full bg-white py-[45px] sm:py-[53px] lg:py-[60px] overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[101px]">
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px]">
         <div className="flex flex-col gap-3 sm:gap-4 lg:gap-[10px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

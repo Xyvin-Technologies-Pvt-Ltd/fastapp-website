@@ -56,7 +56,7 @@ const RequirementsSection = () => {
 
   return (
     <section className="w-full bg-white py-[75px] sm:py-[88px] lg:py-[100px] overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-18">
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px]">
         <div className="flex flex-col lg:flex-row gap-[28px] sm:gap-[33px] lg:gap-[38px] items-stretch">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

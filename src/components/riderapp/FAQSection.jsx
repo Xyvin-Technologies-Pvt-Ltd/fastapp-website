@@ -52,7 +52,7 @@ const FAQSection = () => {
 
   return (
     <section className="w-full bg-white py-[70px] sm:py-[82px] lg:py-[94px] overflow-hidden">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[100px]">
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px]">
         <div className="flex flex-col gap-[42px] sm:gap-[49px] lg:gap-[56px] items-start  mb-4">
           <motion.h2
             initial={{ opacity: 0, x: -30 }}

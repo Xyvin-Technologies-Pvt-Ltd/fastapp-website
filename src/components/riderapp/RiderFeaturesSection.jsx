@@ -28,17 +28,17 @@ const RiderFeaturesSection = () => {
     {
       icon: icon4,
       title: "Multiple Payment Options",
-      description: "Pay securely with cash, card, or digital wallets."
+      description: "Pay easily with cash, wallet, or digital payments."
     },
     {
       icon: icon5,
       title: "Ride Ratings & Feedback",
-      description: "Rate your trip and help us maintain top-quality service."
+      description: "Rate your trip and help us maintain service quality."
     },
     {
       icon: icon6,
       title: "Safety First",
-      description: "Your safety is built into every ride — from pickup to drop-off."
+      description: "Your safety is built into every ride, from booking to drop-off."
     }
   ];
 
@@ -66,7 +66,7 @@ const RiderFeaturesSection = () => {
 
   return (
     <section className="w-full bg-white py-[60px] sm:py-[80px] lg:py-[98px] overflow-hidden">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-20">
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px]">
         <div className="flex flex-col gap-[48px] sm:gap-[56px] lg:gap-[64px] items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

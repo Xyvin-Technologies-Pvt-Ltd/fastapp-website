@@ -42,7 +42,7 @@ const AppDownloadSection = () => {
   };
 
   return (
-    <section className="w-full py-0 px-4 bg-white sm:px-6 lg:px-[56px] pt-[27px] sm:pt-[32px] lg:pt-[33px] pb-[42px] sm:pb-[49px] lg:pb-[56px] overflow-hidden">
+    <section className="w-full py-0 px-6 md:px-12 lg:px-[120px] bg-white pt-[27px] sm:pt-[32px] lg:pt-[33px] pb-[42px] sm:pb-[49px] lg:pb-[56px] overflow-hidden">
       <div className="w-full max-w-[1440px] mx-auto">
         <div className="flex flex-col gap-[37px] sm:gap-[44px] lg:gap-[50px] items-center">
           <div className="flex flex-col gap-[55px] items-center w-full sm:w-[80%] lg:w-[66%]">

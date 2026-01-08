@@ -66,7 +66,7 @@ const DriverFeaturesSection = () => {
 
   return (
     <section className="w-full bg-white py-[60px] sm:py-[80px] lg:py-[101px] overflow-hidden">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-20">
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px]">
         <div className="flex flex-col gap-[48px] sm:gap-[56px] lg:gap-[64px] items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
