@@ -51,9 +51,9 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="w-full bg-white py-[70px] sm:py-[82px] lg:py-[94px] overflow-hidden">
+    <section className="w-full bg-white py-10 md:py-[82px] lg:py-[94px] overflow-hidden">
       <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px]">
-        <div className="flex flex-col gap-[42px] sm:gap-[49px] lg:gap-[56px] items-start  mb-4">
+        <div className="flex flex-col gap-10 md:gap-[49px] lg:gap-[56px] items-start  mb-4">
           <motion.h2
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
