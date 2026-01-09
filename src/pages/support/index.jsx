@@ -38,12 +38,12 @@ const SupportContact = () => {
   const appDownloadLinks = [
     {
       id: 'app-store',
-      icon: scanner1,
+      icon: scanner2,
       title: 'Download Driver App',
     },
     {
       id: 'play-store',
-      icon: scanner2,
+      icon: scanner1,
       title: 'Download Passenger App',
     }
   ];

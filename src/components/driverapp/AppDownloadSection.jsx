@@ -10,11 +10,11 @@ const AppDownloadSection = () => {
   const downloadLinks = [
     {
       title: 'Download Driver App',
-      qrCode: scanner1,
+      qrCode: scanner2,
     },
     {
       title: 'Download Passenger App',
-      qrCode: scanner2,
+      qrCode: scanner1,
     }
   ];
 
