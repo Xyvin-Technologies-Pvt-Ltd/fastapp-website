@@ -32,7 +32,7 @@ const OurOfficeSection = () => {
     };
 
     return (
-        <section className="py-0 md:py-20 px-6 md:px-12 lg:px-[120px] bg-white overflow-hidden">
+        <section className="py-0 md:py-10 px-6 md:px-12 lg:px-[120px] bg-white overflow-hidden">
             <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-[32px]">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
