@@ -89,15 +89,15 @@ const AppDownloadSection = () => {
                 whileHover={{ y: -5, backgroundColor: "#f9fafb" }}
                 className="w-full sm:w-auto transition-colors rounded-xl"
               >
-                <div className="bg-[#FAFAFA] border border-gray-100 rounded-xl p-[4px] sm:p-[5px] lg:p-[6px] flex items-end w-full sm:w-[318px] shadow-sm hover:shadow-md transition-shadow">
-                  <div className="flex items-start gap-3 w-full p-1 sm:p-[2px] lg:p-[6px]">
+                <div className="bg-[#FAFAFA] border border-gray-100 rounded-xl p-[4px] sm:p-[5px] lg:p-[6px] flex items-center w-full sm:w-[318px] shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 w-full p-1 sm:p-[2px] lg:p-[6px]">
                     <img
                       src={link?.qrCode}
                       alt="QR Code"
-                      className="w-[63px] sm:w-[74px] lg:w-[84px] h-[63px] sm:h-[74px] lg:h-[84px] mb-[4px] sm:mb-[5px] lg:mb-[6px] rounded-lg"
+                      className="w-[63px] sm:w-[74px] lg:w-[84px] h-[63px] sm:h-[74px] lg:h-[84px] rounded-lg"
                     />
 
-                    <div className="flex flex-col justify-center flex-1 ml-3 sm:ml-4">
+                    <div className="flex flex-col justify-center flex-1 ml-2">
                       <span className="text-sm sm:text-base font-medium leading-[18px] sm:leading-[20px] text-text-primary">
                         {link?.title}
                       </span>
