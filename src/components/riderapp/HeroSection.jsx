@@ -1,5 +1,5 @@
 import React from 'react';
-import driverapp from '../../assets/images/hero-rd.webp';
+import driverapp from '../../assets/images/d-hero.webp';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
@@ -12,9 +12,11 @@ const HeroSection = () => {
           bg-cover bg-center bg-no-repeat
           relative
         "
-        style={{ backgroundImage: `url(${driverapp})` }}
+       style={{ backgroundImage: `
+                 linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
+                 url(${driverapp})
+                 ` }}
       >
-        <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[120px] h-full flex items-end">
           <motion.h1
