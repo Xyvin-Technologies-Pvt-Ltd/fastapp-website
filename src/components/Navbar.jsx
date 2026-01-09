@@ -39,7 +39,7 @@ const Navbar = () => {
                                 <Link
                                     key={link.name}
                                     to={link.path}
-                                    className={`px-3 py-2 text-[16px] leading-[24px] font-[500] transition-colors ${isActive(link.path) ? 'text-black' : 'text-[#9C9C9C] hover:text-emerald-600'
+                                    className={`px-3 py-2 text-[16px] leading-[24px] font-[500] transition-colors ${isActive(link.path) ? 'text-black' : 'text-[#9C9C9C] hover:text-[#2DA151]'
                                         }`}
                                 >
                                     {link.name}
@@ -77,7 +77,7 @@ const Navbar = () => {
                             key={link.name}
                             to={link.path}
                             onClick={() => setIsMenuOpen(false)}
-                            className={`block px-3 py-4 text-base font-medium transition-colors ${isActive(link.path) ? 'text-black bg-white/20' : 'text-[#9C9C9C] hover:text-black hover:bg-white/10'
+                            className={`block px-3 py-4 text-base font-medium transition-colors ${isActive(link.path) ? 'text-[#2DA151] bg-white/20' : 'text-black  hover:bg-white/10'
                                 }`}
                         >
                             {link.name}
