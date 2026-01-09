@@ -13,7 +13,7 @@ const DriverFeaturesSection = () => {
     {
       icon: icon1,
       title: 'Transparent Earnings',
-      description: 'Know exactly how much you earn for every \nride.'
+      description: 'Know exactly how much you earn for every ride.'
     },
     {
       icon: icon2,

@@ -9,11 +9,11 @@ const AppDownloadSection = () => {
 
   const downloadLinks = [
     {
-      title: 'Download from App Store',
+      title: 'Download Driver App',
       qrCode: scanner1,
     },
     {
-      title: 'Download from Play Store',
+      title: 'Download Passenger App',
       qrCode: scanner2,
     }
   ];
@@ -105,7 +105,7 @@ const AppDownloadSection = () => {
                         Scan to download
                       </span>
                       <div className="flex justify-end mt-1">
-                        <IoIosArrowRoundForward className="w-5 h-5 sm:w-6 sm:h-6 text-[#2ca050]" />
+                        <IoIosArrowRoundForward className="w-5 h-5 sm:w-6 sm:h-6 " />
                       </div>
                     </div>
                   </div>
