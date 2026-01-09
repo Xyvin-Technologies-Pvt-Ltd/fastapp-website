@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from '../../assets/images/h-home.webp';
+import HeroImage from '../../assets/images/hero.webp';
 import { FaApple } from "react-icons/fa6";
 import { FaGooglePlay } from "react-icons/fa";
 import { motion } from 'framer-motion';
