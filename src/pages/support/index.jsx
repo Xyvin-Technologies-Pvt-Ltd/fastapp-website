@@ -204,15 +204,17 @@ const SupportContact = () => {
                   className="flex flex-col gap-[12px] sm:gap-[14px] md:mt-0 lg:mt-[70px]"
                 >
                   <h2
-                    className="text-text-primary max-w-2xl mx-auto md:mx-0 text-[28px] sm:text-[36px] md:text-[42px] lg:text-[56px]"
+                    className="
+                      text-text-primary max-w-2xl mx-auto md:mx-0
+                      text-[28px] sm:text-[36px] md:text-[42px] lg:text-[56px]
+                      tracking-[-1px] sm:tracking-[-1.5px] md:tracking-[-2.5px]
+                    "
                     style={{
                       fontFamily: 'Plus Jakarta Sans, sans-serif',
                       fontWeight: 600,
                       lineHeight: '120%',
-                      letterSpacing: '-2.5px'
                     }}
-                  >
-                    Get Where You are Going — Faster & Smarter
+                  >Get Where You are Going — Faster & Smarter
                   </h2>
                   <p
                     className="text-text-primary w-[84%] mx-auto md:mx-0 lg:max-w-none text-[14px] sm:text-[15px] md:text-[16px]"
