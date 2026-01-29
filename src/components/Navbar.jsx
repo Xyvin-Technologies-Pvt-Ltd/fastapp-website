@@ -87,7 +87,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <div className="px-3 py-4">
-                        <LanguageSelector />
+                        <LanguageSelector isMobile={true} />
                     </div>
                 </div>
             </div>
