@@ -10,26 +10,29 @@ import scanner2 from '../../assets/images/scanner2.webp'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const SupportContact = () => {
+  const { t } = useTranslation();
   const supportOptions = [
     {
       id: 'email',
       icon: <MdEmail style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
-      title: 'Email support',
+      title: t('support.options.email.title'),
       contact: 'support@fastrideapp.com',
       link: 'mailto:support@fastrideapp.com'
     },
     {
       id: 'chat',
       icon: <BsChatFill style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
-      title: 'WhatsApp chat',
+      title: t('support.options.chat.title'),
       contact: '+249912200031',
       link: 'https://wa.me/249912200031'
     },
     {
       id: 'phone',
       icon: <FaPhoneAlt style={{ fill: "url(#support-icon-gradient)" }} className="w-[42.5px] h-[38.25px]" />,
-      title: 'Phone support',
+      title: t('support.options.phone.title'),
       contact: '66700',
       link: 'tel:66700'
     }
@@ -39,12 +42,12 @@ const SupportContact = () => {
     {
       id: 'app-store',
       icon: scanner2,
-      title: 'Download Driver App',
+      title: t('support.download.driver'),
     },
     {
       id: 'play-store',
       icon: scanner1,
-      title: 'Download Passenger App',
+      title: t('support.download.passenger'),
     }
   ];
 
@@ -88,10 +91,10 @@ const SupportContact = () => {
             className="flex flex-col justify-center items-center text-center bg-background-[#F4F4F4]"
           >
             <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold leading-[42px] sm:leading-[54px] md:leading-[63px] lg:leading-[73px] text-text-primary mb-4 sm:mb-6 lg:mb-[20px] max-w-4xl">
-              Contact FastApp Support
+              {t('support.header.title')}
             </h1>
             <p className="text-base text-[#7E7E7E] text-[18px] font-normal leading-[21px] text-text-muted max-w-2xl">
-              If you can’t find what you’re looking for, our support team is ready to help.            </p>
+              {t('support.header.text')}            </p>
           </motion.div>
         </div>
       </section>
@@ -214,7 +217,7 @@ const SupportContact = () => {
                       fontWeight: 600,
                       lineHeight: '120%',
                     }}
-                  >Get Where You are Going — Faster & Smarter
+                  >{t('support.footer.title')}
                   </h2>
                   <p
                     className="text-text-primary w-[84%] mx-auto md:mx-0 lg:max-w-none text-[14px] sm:text-[15px] md:text-[16px]"
@@ -225,7 +228,7 @@ const SupportContact = () => {
                       letterSpacing: '0%'
                     }}
                   >
-                    Need help with a ride, account, or payment? Our support team is here to assist you quickly and reliably.
+                    {t('support.footer.text')}
                   </p>
                 </motion.div>
 
@@ -256,7 +259,7 @@ const SupportContact = () => {
                           {link?.title}
                         </span>
                         <span className="text-[9px] sm:text-xs font-normal leading-[11px] sm:leading-[12px] text-text-primary mt-1">
-                          Scan to download
+                          {t('support.scan_text')}
                         </span>
                         <div className="flex justify-end mt-1">
                           <IoIosArrowRoundForward className="w-5 h-5 sm:w-6 sm:h-6 text-[#2DA151]" />

@@ -8,37 +8,40 @@ import icon5 from '../../assets/images/icon5.webp';
 import icon6 from '../../assets/images/icon6.webp';
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const RiderFeaturesSection = () => {
+  const { t } = useTranslation();
   const features = [
     {
       icon: icon1,
-      title: "Instant Ride Booking",
-      description: "Book a ride in just a few taps with nearby verified drivers."
+      title: t('rider.features.list.0.title'),
+      description: t('rider.features.list.0.desc')
     },
     {
       icon: icon2,
-      title: "Upfront & Transparent Pricing",
-      description: "See your estimated fare before confirming — no surprises."
+      title: t('rider.features.list.1.title'),
+      description: t('rider.features.list.1.desc')
     },
     {
       icon: icon3,
-      title: "Live Ride Tracking",
-      description: "Track your driver’s location and arrival time in real-time."
+      title: t('rider.features.list.2.title'),
+      description: t('rider.features.list.2.desc')
     },
     {
       icon: icon4,
-      title: "Multiple Payment Options",
-      description: "Pay easily with cash, wallet, or digital payments."
+      title: t('rider.features.list.3.title'),
+      description: t('rider.features.list.3.desc')
     },
     {
       icon: icon5,
-      title: "Ride Ratings & Feedback",
-      description: "Rate your trip and help us maintain service quality."
+      title: t('rider.features.list.4.title'),
+      description: t('rider.features.list.4.desc')
     },
     {
       icon: icon6,
-      title: "Safety First",
-      description: "Your safety is built into every ride, from booking to drop-off."
+      title: t('rider.features.list.5.title'),
+      description: t('rider.features.list.5.desc')
     }
   ];
 
@@ -78,7 +81,7 @@ const RiderFeaturesSection = () => {
             <div className="flex items-center gap-2 py-[8px] px-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px]">
               <PiLightbulbFilamentLight className="w-5 h-5 flex-shrink-0" />
               <span className="font-instrument-sans font-medium text-base leading-6 align-middle">
-                Rider Features
+                {t('rider.features.badge')}
               </span>
             </div>
 
@@ -93,10 +96,10 @@ const RiderFeaturesSection = () => {
                 "
               >
                 <span>
-                  Everything you need for a safe, smooth, and reliable ride —
+                  {t('rider.features.title.prefix')}
                 </span>
                 <span className="text-[#ACACAC]">
-                  {" "} designed with riders in mind.
+                  {" "} {t('rider.features.title.suffix')}
                 </span>
               </h2>
             </div>

@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.webp';
 import { IoLocationSharp } from "react-icons/io5";
 
+import { useTranslation } from 'react-i18next';
+
 const Footer = () => {
+  const { t } = useTranslation();
   const quickLinks = [
-    { text: 'Home', href: '/' },
-    { text: 'About', href: '/about' },
-    { text: 'Rider App', href: '/rider-app' },
-    { text: 'Driver App', href: '/driver-app' },
-    { text: 'Support', href: '/support' },
+    { text: t('footer.links.home'), href: '/' },
+    { text: t('footer.links.about'), href: '/about' },
+    { text: t('footer.links.rider_app'), href: '/rider-app' },
+    { text: t('footer.links.driver_app'), href: '/driver-app' },
+    { text: t('footer.links.support'), href: '/support' },
   ];
 
   const socialLinks = [
@@ -35,7 +38,7 @@ const Footer = () => {
               <div className="flex items-center gap-2 lg:mt-auto">
                 <IoLocationSharp className="w-5 h-5 text-black" />
                 <span className="text-base font-normal text-text-primary">
-                  Sudan
+                  {t('footer.location')}
                 </span>
               </div>
             </div>
@@ -43,7 +46,7 @@ const Footer = () => {
             <div className="flex flex-row justify-between lg:justify-end gap-16 w-full lg:w-1/2">
               <div className="flex flex-col items-start min-w-[120px]">
                 <h3 className="text-base font-bold text-black mb-6">
-                  Quick Links
+                  {t('footer.quick_links')}
                 </h3>
                 <div className="flex flex-col items-start gap-4">
                   {quickLinks.map((link, index) => (
@@ -60,7 +63,7 @@ const Footer = () => {
 
               <div className="flex flex-col items-start min-w-[120px]">
                 <h3 className="text-base font-bold text-black mb-6">
-                  Social
+                  {t('footer.social')}
                 </h3>
                 <div className="flex flex-col items-start gap-4">
                   {socialLinks.map((link, index) => (
@@ -82,13 +85,13 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8">
             <div className="text-center sm:text-left order-2 sm:order-1">
               <span className="text-base font-normal text-text-primary">
-                &copy; 2026 Fast App. All rights reserved.
+                {t('footer.copyright')}
               </span>
             </div>
 
             <div className="text-center sm:text-right order-1 sm:order-2">
               <span className="text-base font-normal text-text-primary">
-                Designed & Developed by{' '}
+                {t('footer.designed_by')}{' '}
                 <a
                   href="https://www.xyvin.com/"
                   target="_blank"

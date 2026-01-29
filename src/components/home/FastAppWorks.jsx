@@ -6,7 +6,11 @@ import bg from '../../assets/images/homebg.png'
 import { PiLightbulbFilamentLight } from "react-icons/pi";
 
 
+import { useTranslation } from 'react-i18next';
+
+
 const FastAppWorks = () => {
+    const { t } = useTranslation();
 
 
     return (
@@ -14,11 +18,11 @@ const FastAppWorks = () => {
             <div className="max-w-7xl mx-auto flex flex-col items-center">
                 <div className="flex items-center bg-[#F4F7F9] gap-2 px-4 py-2 border rounded-full border-gray-200 mb-6 group ">
                     <PiLightbulbFilamentLight className="text-xl text-[#0D0D0D] " />
-                    <span className="text-[14px] font-medium text-[#0D0D0D]">How FastApp Works</span>
+                    <span className="text-[14px] font-medium text-[#0D0D0D]">{t('works.badge')}</span>
                 </div>
 
                 <h2 className="text-4xl md:text-5xl lg:text-[62px] font-semibold text-[#0D0D0D] text-center mb-6 !leading-[1.1]">
-                    Get a Ride in Just a <span className="text-[#2DA151] italic">Few Steps</span>
+                    {t('works.title_prefix')} <span className="text-[#2DA151] italic">{t('works.title_suffix')}</span>
                 </h2>
 
                 <p className="max-w-2xl text-center mb-16 font-haas" style={{
@@ -28,14 +32,14 @@ const FastAppWorks = () => {
                     lineHeight: '27px',
                     textAlign: 'center'
                 }}>
-                    Follow these simple steps to book your ride  and reach your <br /> destination with ease.
+                    {t('works.description')}
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                     {[
-                        { title: "Sign Up & Set Your Location", image: image1 },
-                        { title: "Choose Your Ride & Confirm", image: image2 },
-                        { title: "Track Your Driver & Go", image: image3 }
+                        { title: t('works.steps.0.title'), image: image1 },
+                        { title: t('works.steps.1.title'), image: image2 },
+                        { title: t('works.steps.2.title'), image: image3 }
                     ].map((step, idx) => (
                         <div
                             key={idx}

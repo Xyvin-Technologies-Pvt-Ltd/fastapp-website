@@ -6,31 +6,34 @@ import icon4 from '../../assets/images/ben4.png';
 import { MdTouchApp } from "react-icons/md";
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 
 const BenefitsSection = () => {
+  const { t } = useTranslation();
   const benefits = [
     {
       icon: icon1,
-      title: 'Fast Booking',
-      description: 'Get a ride in just a few taps',
+      title: t('benefits.fast_booking.title'),
+      description: t('benefits.fast_booking.desc'),
       iconSize: 'w-[49px] h-[49px]'
     },
     {
       icon: icon2,
-      title: 'Transparent Pricing',
-      description: 'Know the fare before you ride',
+      title: t('benefits.transparent_pricing.title'),
+      description: t('benefits.transparent_pricing.desc'),
       iconSize: 'w-[43px] h-[43px]'
     },
     {
       icon: icon3,
-      title: 'Reliable Drivers',
-      description: 'Verified drivers you can trust',
+      title: t('benefits.reliable_drivers.title'),
+      description: t('benefits.reliable_drivers.desc'),
       iconSize: 'w-[32px] h-[32px]'
     },
     {
       icon: icon4,
-      title: 'Easy Payments',
-      description: 'Pay securely with multiple options',
+      title: t('benefits.easy_payments.title'),
+      description: t('benefits.easy_payments.desc'),
       iconSize: 'w-[28px] h-[28px]'
     }
   ];

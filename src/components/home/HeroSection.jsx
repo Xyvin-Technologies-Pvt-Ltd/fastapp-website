@@ -3,11 +3,13 @@ import HeroImage from '../../assets/images/hero.webp';
 import { FaApple } from "react-icons/fa6";
 import { FaGooglePlay } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative w-full h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden">
-      
+
       <div
         className="absolute inset-0 z-0  bg-cover bg-center bg-no-repeat"
         style={{
@@ -28,8 +30,8 @@ const HeroSection = () => {
             md:text-6xl
             lg:text-[60px]"
         >
-          Book Rides in Minutes <br />
-          With <span className="text-[#2DA151] italic">FastApp</span>
+          {t('hero.title')} <br />
+          {t('hero.with')} <span className="text-[#2DA151] italic">FastApp</span>
         </motion.h1>
 
         <motion.p
@@ -38,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="font-neue font-normal text-[16px] md:text-[18px] leading-[26px] md:leading-[30.6px] text-center"
         >
-          Get affordable rides with live tracking and easy payments.
+          {t('hero.subtitle_1')}
         </motion.p>
 
         <motion.p
@@ -47,7 +49,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           className="font-neue font-normal text-[16px] mb-[9px] md:text-[18px] leading-[26px] md:leading-[30.6px] text-center"
         >
-          Fast, Safe Rides — Anytime, Anywhere
+          {t('hero.subtitle_2')}
         </motion.p>
 
         <motion.div
@@ -62,14 +64,14 @@ const HeroSection = () => {
             className="flex items-center justify-center gap-2 bg-white text-black px-6 py-3 rounded-full text-[16px] font-bold hover:bg-gray-100 transition active:scale-95"
           >
             <FaApple className="text-[24px]" />
-            App Store
+            {t('hero.app_store')}
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.xyvin.fastapp"
             target="_blank"
             className="sm:w-auto flex items-center justify-center gap-2 bg-white text-black border-gray-300 px-5 py-3 rounded-[100px] text-[16px] leading-[27.2px] font-[700] font-sans hover:bg-gray-100 transition active:scale-95 cursor-pointer"
           >
-            <FaGooglePlay className="text-[20px]" />Google Play
+            <FaGooglePlay className="text-[20px]" />{t('hero.google_play')}
           </a>
         </motion.div>
       </div>

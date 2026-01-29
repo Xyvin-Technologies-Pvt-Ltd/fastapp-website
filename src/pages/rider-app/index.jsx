@@ -8,12 +8,12 @@ import AppDownloadSection from '../../components/driverapp/AppDownloadSection';
 const Riderapp = () => {
   return (
     <>
-        <HeroSection />
-        <MobileShowcaseSection />
-        <RiderFeaturesSection />
-        <SafetySection />
-        <FAQSection />
-        <AppDownloadSection />
+      <HeroSection />
+      <MobileShowcaseSection />
+      <RiderFeaturesSection />
+      <SafetySection />
+      <FAQSection />
+      <AppDownloadSection />
     </>
   );
 };

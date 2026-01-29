@@ -2,7 +2,10 @@ import hero from '../../assets/images/abouthero.jpg';
 import hero1 from '../../assets/images/a-hero.webp';
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const AboutHero = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full relative">
       <div
@@ -12,9 +15,11 @@ const AboutHero = () => {
                   bg-cover bg-center bg-no-repeat
                   relative
                 "
-        style={{ backgroundImage: `
+        style={{
+          backgroundImage: `
           linear-gradient(180deg, rgba(0, 0, 0, 0) 39.32%, rgba(0, 0, 0, 0.8) 100%),
-          url(${hero1})` }}
+          url(${hero1})`
+        }}
       >
         {/* <div className="absolute inset-0 bg-black/30"></div> */}
 
@@ -29,9 +34,9 @@ const AboutHero = () => {
                       sm:text-[32px] sm:leading-[48px] 
                       md:text-[48px] md:leading-[60px] 
                       drop-shadow-2xl
-                      mb-[50px] md:mb-[75px] lg:mb-[90px]
+                    mb-[50px] md:mb-[75px] lg:mb-[90px]
                     "
-          > Moving cities. Empowering people.
+          > {t('about.hero.title')}
           </motion.h1>
         </div>
       </div>

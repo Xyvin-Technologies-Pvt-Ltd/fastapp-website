@@ -2,25 +2,28 @@ import React, { useState } from 'react';
 import { MdOutlineKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const FAQSection = () => {
+  const { t } = useTranslation();
   const [expandedFAQ, setExpandedFAQ] = useState(0);
 
   const faqs = [
     {
-      question: 'How do I know the fare before booking?',
-      answer: 'You will see the estimated fare and the expected arrival time before confirming.'
+      question: t('rider.faq.list.0.q'),
+      answer: t('rider.faq.list.0.a')
     },
     {
-      question: 'Are drivers verified?',
-      answer: 'Yes. All drivers go through a verification process which includes ID validation, background checks, and document verification before they are allowed to drive.'
+      question: t('rider.faq.list.1.q'),
+      answer: t('rider.faq.list.1.a')
     },
     {
-      question: 'Can I track my ride?',
-      answer: 'Absolutely. Once your ride is confirmed, you can track your driver’s live location in real-time until you reach your destination.'
+      question: t('rider.faq.list.2.q'),
+      answer: t('rider.faq.list.2.a')
     },
     {
-      question: 'What if I face an issue during the ride?',
-      answer: 'If you face any issue during your ride, you can contact support through the app or use the in-app emergency options for immediate help.'
+      question: t('rider.faq.list.3.q'),
+      answer: t('rider.faq.list.3.a')
     }
   ];
 
@@ -61,8 +64,8 @@ const FAQSection = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-[36px] sm:text-[42px] lg:text-[48px] font-normal leading-[43px] sm:leading-[50px] lg:leading-[58px] capitalize text-text-secondary font-haas"
           >
-            <span>FAQ</span>
-            <span className="text-[#2DA151]"> (Riders)</span>
+            <span>{t('rider.faq.title')}</span>
+            <span className="text-[#2DA151]"> {t('rider.faq.subtitle')}</span>
           </motion.h2>
 
           <motion.div

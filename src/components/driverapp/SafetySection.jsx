@@ -7,30 +7,33 @@ import { SparklesIcon } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 import sos from '../../assets/images/safty-vector.webp';
 
+import { useTranslation } from 'react-i18next';
+
 const SafetySection = () => {
+  const { t } = useTranslation();
   const leftSafetyFeatures = [
     {
       icon: <PiUsers className="w-6 h-6 flex-shrink-0" />,
-      title: 'Driver identity verification',
-      description: 'All drivers are verified to ensure a trusted ride experience.'
+      title: t('driver.safety.features.0.title'),
+      description: t('driver.safety.features.0.desc')
     },
     {
       icon: <img src={sos} alt="SOS icon" className="w-[26px] h-[26px] object-contain" />,
-      title: 'SOS / emergency assistance',
-      description: 'Get instant help with one tap in case of emergencies.'
+      title: t('driver.safety.features.1.title'),
+      description: t('driver.safety.features.1.desc')
     }
   ];
 
   const rightSafetyFeatures = [
     {
       icon: <SparklesIcon className="w-6 h-6 flex-shrink-0" />,
-      title: 'Real-time trip monitoring',
-      description: 'Your trip is tracked live from pickup to drop-off.'
+      title: t('driver.safety.features.2.title'),
+      description: t('driver.safety.features.2.desc')
     },
     {
       icon: <PiSmileyStickerLight className="w-6 h-6 flex-shrink-0" />,
-      title: 'Trip history & receipts',
-      description: 'Access past rides and detailed receipts anytime.'
+      title: t('driver.safety.features.3.title'),
+      description: t('driver.safety.features.3.desc')
     }
   ];
 
@@ -69,13 +72,13 @@ const SafetySection = () => {
             className="flex flex-col gap-7 items-center px-1 sm:px-2 lg:px-[6px]"
           >
             <h2 className="text-[36px] sm:text-[42px] lg:text-[48px] font-medium leading-[43px] sm:leading-[50px] lg:leading-[58px] text-center">
-              <span >Safety for</span>
-              <span className="text-[#2DA151] italic"> Riders</span>
+              <span >{t('driver.safety.title.prefix')}</span>
+              <span className="text-[#2DA151] italic"> {t('driver.safety.title.suffix')}</span>
             </h2>
 
             <div className="mb-9">
               <p className="text-lg font-medium leading-[22px] text-center text-[#ACACAC]">
-                Your safety is built into every ride, from booking to drop-off.
+                {t('driver.safety.description')}
               </p>
             </div>
           </motion.div>

@@ -2,25 +2,28 @@ import React, { useState } from 'react';
 import { MdOutlineKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const FAQSection = () => {
+  const { t } = useTranslation();
   const [expandedFAQ, setExpandedFAQ] = useState(0);
 
   const faqs = [
     {
-      question: 'How do I join as a driver?',
-      answer: 'Sign up in the app, upload documents, and start driving.'
+      question: t('driver.faq.list.0.q'),
+      answer: t('driver.faq.list.0.a')
     },
     {
-      question: 'How do drivers get paid?',
-      answer: 'Drivers are paid for each completed ride. Earnings are transferred to your registered bank account or wallet based on the payment method selected by the rider.'
+      question: t('driver.faq.list.1.q'),
+      answer: t('driver.faq.list.1.a')
     },
     {
-      question: 'Can I choose my working hours?',
-      answer: 'Yes, you are free to go online and offline anytime. There are no fixed working hours — you drive whenever it’s convenient for you.'
+      question: t('driver.faq.list.2.q'),
+      answer: t('driver.faq.list.2.a')
     },
     {
-      question: 'How do I receive ride requests?',
-      answer: 'When you are online in the app, nearby ride requests will automatically appear on your screen. You can review the details and accept the ride.'
+      question: t('driver.faq.list.3.q'),
+      answer: t('driver.faq.list.3.a')
     }
   ];
 
@@ -61,8 +64,8 @@ const FAQSection = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-[36px] sm:text-[42px] lg:text-[48px] font-normal leading-[43px] sm:leading-[50px] lg:leading-[58px] capitalize text-text-secondary font-haas"
           >
-            <span>FAQ</span>
-            <span className="text-[#2DA151]"> (Drivers)</span>
+            <span>{t('driver.faq.title')}</span>
+            <span className="text-[#2DA151]"> {t('driver.faq.subtitle')}</span>
           </motion.h2>
 
           <motion.div

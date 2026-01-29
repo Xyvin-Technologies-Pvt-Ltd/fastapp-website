@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 import logo from '../assets/images/Group.png'
 
 const Navbar = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { t } = useTranslation();
 
     const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'About', path: '/about' },
-        { name: 'Rider App', path: '/rider-app' },
-        { name: 'Driver App', path: '/driver-app' },
-        { name: 'Support', path: '/support' },
+        { name: t('nav.home'), path: '/' },
+        { name: t('nav.about'), path: '/about' },
+        { name: t('nav.rider_app'), path: '/rider-app' },
+        { name: t('nav.driver_app'), path: '/driver-app' },
+        { name: t('nav.support'), path: '/support' },
     ];
 
     const isActive = (path) => location.pathname === path;
 
     return (
         <nav
+            dir="ltr"
             className="fixed w-full z-50 border-b transition-all duration-300"
             style={{
                 background: '#FFFFFF75',
@@ -34,7 +38,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden md:block">
-                        <div className="ml-10 flex items-baseline space-x-7">
+                        <div className="ms-10 flex items-baseline gap-7">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
@@ -49,8 +53,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden md:block">
-                        <button className=" text-white px-6 py-2.5 rounded-full ">
-                        </button>
+                        <LanguageSelector />
                     </div>
 
                     <div className="flex md:hidden">
@@ -74,7 +77,7 @@ const Navbar = () => {
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-white/14">
                     {navLinks.map((link) => (
                         <Link
-                            key={link.name}
+                            key={link.path}
                             to={link.path}
                             onClick={() => setIsMenuOpen(false)}
                             className={`block px-3 py-4 text-base font-medium transition-colors ${isActive(link.path) ? 'text-[#2DA151] bg-white/20' : 'text-black  hover:bg-white/10'
@@ -83,6 +86,9 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
+                    <div className="px-3 py-4">
+                        <LanguageSelector />
+                    </div>
                 </div>
             </div>
         </nav>

@@ -6,59 +6,62 @@ import { FiShare2 } from "react-icons/fi";
 import { PiUsersThreeBold } from "react-icons/pi";
 import { motion } from 'framer-motion';
 import app from '../../assets/images/appstore.webp';
+import { useTranslation } from 'react-i18next';
+
 const AppShowcaseSection = () => {
+    const { t } = useTranslation();
     const showcaseItems = [
         {
-            title: "Booking & Ride",
-            subtitle: "Experience",
+            title: t('showcase.rider.title_1'),
+            subtitle: t('showcase.rider.subtitle'),
             image: image1,
             features: [
                 {
                     icon: <BiMessageRoundedDots className="w-6 h-6" />,
-                    title: "Instant Ride Booking",
-                    description: "Book a ride in just a few taps without waiting or complicated steps."
+                    title: t('showcase.rider.features.0.title'),
+                    description: t('showcase.rider.features.0.desc')
                 },
                 {
                     icon: <FiShare2 className="w-6 h-6" />,
-                    title: "Live GPS Tracking",
-                    description: "Track your driver's location in real time from pickup to drop-off."
+                    title: t('showcase.rider.features.1.title'),
+                    description: t('showcase.rider.features.1.desc')
                 },
                 {
                     icon: <FiSmile className="w-6 h-6" />,
-                    title: "Accurate Pickup & Drop Locations",
-                    description: "Set your exact pickup and destination points with map precision."
+                    title: t('showcase.rider.features.2.title'),
+                    description: t('showcase.rider.features.2.desc')
                 },
                 {
                     icon: <PiUsersThreeBold className="w-6 h-6" />,
-                    title: "Estimated Time & Fare",
-                    description: "Know your estimated arrival time and ride cost before confirming"
+                    title: t('showcase.rider.features.3.title'),
+                    description: t('showcase.rider.features.3.desc')
                 }
             ]
         },
         {
-            title: "Ready to Start Driving",
-            subtitle: "with FastApp?",
+            title: t('showcase.driver.title_1'),
+            subtitle: t('showcase.driver.subtitle'),
             image: image2,
             features: [
                 {
                     icon: <BiMessageRoundedDots className="w-6 h-6" />,
-                    title: "Flexible Driving Hours",
-                    description: "Go online anytime and drive on your own schedule."
+                    title: t('showcase.driver.features.0.title'),
+                    description: t('showcase.driver.features.0.desc')
                 },
                 {
                     icon: <FiShare2 className="w-6 h-6" />,
-                    title: "Transparent Earnings",
-                    description: "See trip fares, incentives, and payouts clearly in your app."
+                    title: t('showcase.driver.features.1.title'),
+                    description: t('showcase.driver.features.1.desc')
                 },
                 {
                     icon: <FiSmile className="w-6 h-6" />,
-                    title: "Easy Trip Management",
-                    description: "Accept trips, navigate routes, and complete rides with ease."
+                    title: t('showcase.driver.features.2.title'),
+                    description: t('showcase.driver.features.2.desc')
                 },
                 {
                     icon: <PiUsersThreeBold className="w-6 h-6" />,
-                    title: "Quick & Secure Payouts",
-                    description: "Receive your earnings securely with fast payouts."
+                    title: t('showcase.driver.features.3.title'),
+                    description: t('showcase.driver.features.3.desc')
                 }
             ]
         }
@@ -268,8 +271,8 @@ const AppShowcaseSection = () => {
                         </svg>
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-[13px] font-medium text-[#1A1A1A] leading-[13px] font-neue">Get It On</span>
-                        <span className="text-[18px] font-medium text-[#1A1A1A] leading-[27px] font-neue">Google Play</span>
+                        <span className="text-[13px] font-medium text-[#1A1A1A] leading-[13px] font-neue">{t('app.get_it_on')}</span>
+                        <span className="text-[18px] font-medium text-[#1A1A1A] leading-[27px] font-neue">{t('app.google_play')}</span>
                     </div>
                 </a>
                 <a href="https://apps.apple.com/in/app/fast-app-driver/id6754153756" target="_blank" className="flex items-center gap-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px] px-8 py-3 transition-all hover:bg-slate-100 hover:scale-105 active:scale-95">
@@ -277,8 +280,8 @@ const AppShowcaseSection = () => {
                         <img src={app} alt="App Store" className="w-full h-full object-contain" />
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-[13px] font-medium text-[#1A1A1A] leading-[13px] font-neue">Download on the</span>
-                        <span className="text-[18px] font-medium text-[#1A1A1A] leading-[27px] font-neue">App Store</span>
+                        <span className="text-[13px] font-medium text-[#1A1A1A] leading-[13px] font-neue">{t('app.download_on')}</span>
+                        <span className="text-[18px] font-medium text-[#1A1A1A] leading-[27px] font-neue">{t('app.app_store')}</span>
                     </div>
                 </a>
             </motion.div>

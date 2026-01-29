@@ -5,13 +5,16 @@ import clientsWrapper from '../../assets/images/Clients Wrapper.webp';
 import { motion } from 'framer-motion';
 import vector from '../../assets/images/Vector.webp';
 
+import { useTranslation } from 'react-i18next';
+
 const HowWeWork = () => {
+    const { t } = useTranslation();
     const safetyPoints = [
-        { text: "Verified driver onboarding" },
-        { text: "Real-time trip tracking" },
-        { text: "Emergency support access" },
-        { text: "Secure payments" },
-        { text: "Ride history & support logs" }
+        { text: t('about.safety.points.0') },
+        { text: t('about.safety.points.1') },
+        { text: t('about.safety.points.2') },
+        { text: t('about.safety.points.3') },
+        { text: t('about.safety.points.4') }
     ];
 
     const containerVariants = {
@@ -47,11 +50,11 @@ const HowWeWork = () => {
                     className="flex flex-col items-center mb-16"
                 >
                     <div className="flex items-center gap-1 font-neue font-medium text-[16px] leading-[60px] tracking-[-0.5px] text-center mb-0">
-                        <span className="text-black">Safety</span>
-                        <span className="text-[#ACACAC]">Comes First</span>
+                        <span className="text-black">{t('about.safety.badge.prefix')}</span>
+                        <span className="text-[#ACACAC]">{t('about.safety.badge.suffix')}</span>
                     </div>
                     <h2 className="font-neue font-medium text-[40px] md:text-[48px] leading-[60px] tracking-[-0.5px] text-center">
-                        Safety is at the <span className="text-[#2DA151] italic">heart of FastApp.</span>
+                        {t('about.safety.title.prefix')} <span className="text-[#2DA151] italic">{t('about.safety.title.suffix')}</span>
                     </h2>
                 </motion.div>
 

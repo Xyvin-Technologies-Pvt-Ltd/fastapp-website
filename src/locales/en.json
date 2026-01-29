@@ -1,0 +1,405 @@
+{
+    "welcome": "Welcome to FastApp",
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "rider_app": "Rider App",
+        "driver_app": "Driver App",
+        "support": "Support"
+    },
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "hero": {
+        "title": "Book Rides in Minutes",
+        "with": "With",
+        "subtitle_1": "Get affordable rides with live tracking and easy payments.",
+        "subtitle_2": "Fast, Safe Rides — Anytime, Anywhere",
+        "app_store": "App Store",
+        "google_play": "Google Play"
+    },
+    "benefits": {
+        "fast_booking": {
+            "title": "Fast Booking",
+            "desc": "Get a ride in just a few taps"
+        },
+        "transparent_pricing": {
+            "title": "Transparent Pricing",
+            "desc": "Know the fare before you ride"
+        },
+        "reliable_drivers": {
+            "title": "Reliable Drivers",
+            "desc": "Verified drivers you can trust"
+        },
+        "easy_payments": {
+            "title": "Easy Payments",
+            "desc": "Pay securely with multiple options"
+        }
+    },
+    "features": {
+        "title_prefix": "Top Features of",
+        "subtitle": "FastApp makes booking rides faster, safer, and more transparent—so you can travel with confidence.",
+        "list": [
+            {
+                "title": "Book a Ride in Seconds",
+                "desc": "Instant booking with just a few taps."
+            },
+            {
+                "title": "See Fare & Arrival Time",
+                "desc": "Upfront pricing and ETA."
+            },
+            {
+                "title": "Find the Right Ride Instantly",
+                "desc": "Get matched with nearby drivers for faster pickups and smoother trips."
+            },
+            {
+                "title": "Search & Plan Your Ride",
+                "desc": "Advanced ride search."
+            }
+        ]
+    },
+    "showcase": {
+        "rider": {
+            "title_1": "Booking & Ride",
+            "subtitle": "Experience",
+            "features": [
+                {
+                    "title": "Instant Ride Booking",
+                    "desc": "Book a ride in just a few taps without waiting or complicated steps."
+                },
+                {
+                    "title": "Live GPS Tracking",
+                    "desc": "Track your driver's location in real time from pickup to drop-off."
+                },
+                {
+                    "title": "Accurate Pickup & Drop Locations",
+                    "desc": "Set your exact pickup and destination points with map precision."
+                },
+                {
+                    "title": "Estimated Time & Fare",
+                    "desc": "Know your estimated arrival time and ride cost before confirming"
+                }
+            ]
+        },
+        "driver": {
+            "title_1": "Ready to Start Driving",
+            "subtitle": "with FastApp?",
+            "features": [
+                {
+                    "title": "Flexible Driving Hours",
+                    "desc": "Go online anytime and drive on your own schedule."
+                },
+                {
+                    "title": "Transparent Earnings",
+                    "desc": "See trip fares, incentives, and payouts clearly in your app."
+                },
+                {
+                    "title": "Easy Trip Management",
+                    "desc": "Accept trips, navigate routes, and complete rides with ease."
+                },
+                {
+                    "title": "Quick & Secure Payouts",
+                    "desc": "Receive your earnings securely with fast payouts."
+                }
+            ]
+        }
+    },
+    "driver": {
+        "hero": {
+            "title": "Drive. Earn. Be in Control."
+        },
+        "download": {
+            "title": {
+                "prefix": "Get Where You are",
+                "middle": "Going —",
+                "suffix": "Faster & Smarter"
+            },
+            "description": "Book rides instantly with real-time tracking, transparent pricing, and trusted drivers — all in one app.",
+            "links": {
+                "driver": "Download Driver App",
+                "passenger": "Download Passenger App"
+            },
+            "scan_text": "Scan to download"
+        },
+        "features": {
+            "badge": "Driver Features",
+            "title": {
+                "prefix": "Everything you need for a safe, smooth, and comfortable ride —",
+                "suffix": "all in one app."
+            },
+            "list": [
+                {
+                    "title": "Transparent Earnings",
+                    "desc": "Know exactly how much you earn for every ride."
+                },
+                {
+                    "title": "Upfront & Transparent Pricing",
+                    "desc": "See your estimated fare before confirming — no surprises."
+                },
+                {
+                    "title": "Smart Navigation",
+                    "desc": "Get optimized routes for faster trips."
+                },
+                {
+                    "title": "Flexible Schedule",
+                    "desc": "Drive when you want — no fixed hours."
+                },
+                {
+                    "title": "Driver Safety",
+                    "desc": "Emergency support and trip monitoring for drivers too."
+                },
+                {
+                    "title": "Earnings Dashboard",
+                    "desc": "Track daily, weekly, and monthly income."
+                }
+            ]
+        },
+        "faq": {
+            "title": "FAQ",
+            "subtitle": "(Drivers)",
+            "list": [
+                {
+                    "q": "How do I join as a driver?",
+                    "a": "Sign up in the app, upload documents, and start driving."
+                },
+                {
+                    "q": "How do drivers get paid?",
+                    "a": "Drivers are paid for each completed ride. Earnings are transferred to your registered bank account or wallet based on the payment method selected by the rider."
+                },
+                {
+                    "q": "Can I choose my working hours?",
+                    "a": "Yes, you are free to go online and offline anytime. There are no fixed working hours — you drive whenever it’s convenient for you."
+                },
+                {
+                    "q": "How do I receive ride requests?",
+                    "a": "When you are online in the app, nearby ride requests will automatically appear on your screen. You can review the details and accept the ride."
+                }
+            ]
+        },
+        "requirements": {
+            "title": {
+                "prefix": "What You",
+                "suffix": "Need?"
+            },
+            "list": [
+                {
+                    "title": "Valid driving license",
+                    "desc": "A government-approved license to legally drive."
+                },
+                {
+                    "title": "Registered vehicle",
+                    "desc": "A properly registered vehicle in good condition."
+                },
+                {
+                    "title": "Smartphone with internet",
+                    "desc": "Required to receive rides and navigate in real time."
+                },
+                {
+                    "title": "Basic background verification",
+                    "desc": "Simple checks to ensure rider and driver safety."
+                }
+            ]
+        },
+        "safety": {
+            "title": {
+                "prefix": "Safety for",
+                "suffix": "Riders"
+            },
+            "description": "Your safety is built into every ride, from booking to drop-off.",
+            "features": [
+                {
+                    "title": "Driver identity verification",
+                    "desc": "All drivers are verified to ensure a trusted ride experience."
+                },
+                {
+                    "title": "SOS / emergency assistance",
+                    "desc": "Get instant help with one tap in case of emergencies."
+                },
+                {
+                    "title": "Real-time trip monitoring",
+                    "desc": "Your trip is tracked live from pickup to drop-off."
+                },
+                {
+                    "title": "Trip history & receipts",
+                    "desc": "Access past rides and detailed receipts anytime."
+                }
+            ]
+        }
+    },
+    "app": {
+        "get_it_on": "Get It On",
+        "download_on": "Download on the",
+        "app_store": "App Store",
+        "google_play": "Google Play"
+    },
+    "works": {
+        "badge": "How FastApp Works",
+        "title_prefix": "Get a Ride in Just a",
+        "title_suffix": "Few Steps",
+        "description": "Follow these simple steps to book your ride and reach your destination with ease.",
+        "steps": [
+            {
+                "title": "Sign Up & Set Your Location"
+            },
+            {
+                "title": "Choose Your Ride & Confirm"
+            },
+            {
+                "title": "Track Your Driver & Go"
+            }
+        ]
+    },
+    "footer": {
+        "links": {
+            "home": "Home",
+            "about": "About",
+            "rider_app": "Rider App",
+            "driver_app": "Driver App",
+            "support": "Support"
+        },
+        "location": "Sudan",
+        "quick_links": "Quick Links",
+        "social": "Social",
+        "copyright": "© 2026 Fast App. All rights reserved.",
+        "designed_by": "Designed & Developed by"
+    },
+    "about": {
+        "hero": {
+            "title": "Moving cities. Empowering people."
+        },
+        "intro": "FastApp is a smart, reliable ride-hailing platform built to make everyday travel safer, faster, and more affordable for riders — while creating fair earning opportunities for drivers.",
+        "who_we_are": {
+            "prefix": "Who",
+            "suffix": "We Are?"
+        },
+        "description": {
+            "p1": "FastApp is a technology-driven mobility platform that connects riders with nearby drivers in just a few taps. Our mission is to simplify urban transportation by combining real-time technology, transparent pricing, and safety-first design.",
+            "p2": "Whether you're commuting to work, heading out late at night, or driving to earn on your own schedule — FastApp is built to support you every step of the way."
+        },
+        "safety": {
+            "badge": {
+                "prefix": "Safety",
+                "suffix": "Comes First"
+            },
+            "title": {
+                "prefix": "Safety is at the",
+                "suffix": "heart of FastApp."
+            },
+            "points": [
+                "Verified driver onboarding",
+                "Real-time trip tracking",
+                "Emergency support access",
+                "Secure payments",
+                "Ride history & support logs"
+            ]
+        },
+        "office": {
+            "vision": {
+                "prefix": "Our",
+                "suffix": "Vision"
+            },
+            "title": {
+                "prefix": "We envision a",
+                "highlight": "future",
+                "suffix": "where city travel is:"
+            },
+            "description": "FastApp aims to become a preferred mobility partner across cities by continuously improving rider experience and driver satisfaction.",
+            "subtitle": "We envision a future where city travel is:",
+            "points": [
+                "Stress-free",
+                "Affordable",
+                "Environment-aware",
+                "Driven by technology and trust"
+            ]
+        }
+    },
+    "rider": {
+        "hero": {
+            "title": "Your Ride. Your Way. Anytime."
+        },
+        "features": {
+            "badge": "Rider Features",
+            "title": {
+                "prefix": "Everything you need for a safe, smooth, and reliable ride —",
+                "suffix": " designed with riders in mind."
+            },
+            "list": [
+                {
+                    "title": "Instant Ride Booking",
+                    "desc": "Book a ride in just a few taps with nearby verified drivers."
+                },
+                {
+                    "title": "Upfront & Transparent Pricing",
+                    "desc": "See your estimated fare before confirming — no surprises."
+                },
+                {
+                    "title": "Live Ride Tracking",
+                    "desc": "Track your driver’s location and arrival time in real-time."
+                },
+                {
+                    "title": "Multiple Payment Options",
+                    "desc": "Pay easily with cash, wallet, or digital payments."
+                },
+                {
+                    "title": "Ride Ratings & Feedback",
+                    "desc": "Rate your trip and help us maintain service quality."
+                },
+                {
+                    "title": "Safety First",
+                    "desc": "Your safety is built into every ride, from booking to drop-off."
+                }
+            ]
+        },
+        "faq": {
+            "title": "FAQ",
+            "subtitle": "(Riders)",
+            "list": [
+                {
+                    "q": "How do I know the fare before booking?",
+                    "a": "You will see the estimated fare and the expected arrival time before confirming."
+                },
+                {
+                    "q": "Are drivers verified?",
+                    "a": "Yes. All drivers go through a verification process which includes ID validation, background checks, and document verification before they are allowed to drive."
+                },
+                {
+                    "q": "Can I track my ride?",
+                    "a": "Absolutely. Once your ride is confirmed, you can track your driver’s live location in real-time until you reach your destination."
+                },
+                {
+                    "q": "What if I face an issue during the ride?",
+                    "a": "If you face any issue during your ride, you can contact support through the app or use the in-app emergency options for immediate help."
+                }
+            ]
+        }
+    },
+    "support": {
+        "header": {
+            "title": "Contact FastApp Support",
+            "text": "If you can’t find what you’re looking for, our support team is ready to help."
+        },
+        "options": {
+            "email": {
+                "title": "Email support"
+            },
+            "chat": {
+                "title": "WhatsApp chat"
+            },
+            "phone": {
+                "title": "Phone support"
+            }
+        },
+        "download": {
+            "driver": "Download Driver App",
+            "passenger": "Download Passenger App"
+        },
+        "footer": {
+            "title": "Get Where You are Going — Faster & Smarter",
+            "text": "Need help with a ride, account, or payment? Our support team is here to assist you quickly and reliably."
+        },
+        "scan_text": "Scan to download"
+    },
+    "mobile": {
+        "showcase_alt": "Mobile App Showcase"
+    }
+}

@@ -4,7 +4,10 @@ import image2 from '../../assets/images/a-image2.webp';
 import image3 from '../../assets/images/a-image3.webp';
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const AboutSection = () => {
+    const { t } = useTranslation();
     return (
         <section className="py-20 px-6 md:px-20 lg:px-[120px] bg-white overflow-hidden">
             <div className="max-w-[1440px] mx-auto flex flex-col gap-16 md:gap-24">
@@ -25,7 +28,7 @@ const AboutSection = () => {
                         transition={{ duration: 0.8, delay: 0.1 }}
                         className="font-neue font-medium text-[32px] md:text-[42px] leading-[40px] md:leading-[50px] tracking-[-0.5px] text-black max-w-[950px]"
                     >
-                        FastApp is a smart, reliable ride-hailing platform built to make everyday travel safer, faster, and more affordable for riders — while creating fair earning opportunities for drivers.
+                        {t('about.intro')}
                     </motion.h2>
                 </div>
 
@@ -38,7 +41,7 @@ const AboutSection = () => {
                             transition={{ duration: 0.6 }}
                             className="font-haas font-bold text-[16px] leading-[24px] tracking-[-0.8px] "
                         >
-                            Who <span className="text-[#7E7E7E] font-[700]">We Are?</span>
+                            {t('about.who_we_are.prefix')} <span className="text-[#7E7E7E] font-[700]">{t('about.who_we_are.suffix')}</span>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -62,10 +65,10 @@ const AboutSection = () => {
                     >
                         <div className="max-w-[600px] text-left">
                             <p className="mb-10 font-haas">
-                                FastApp is a technology-driven mobility platform that connects riders with nearby drivers in just a few taps. Our mission is to simplify urban transportation by combining real-time technology, transparent pricing, and safety-first design.
+                                {t('about.description.p1')}
                             </p>
                             <p>
-                                Whether you're commuting to work, heading out late at night, or driving to earn on your own schedule — FastApp is built to support you every step of the way.
+                                {t('about.description.p2')}
                             </p>
                         </div>
                     </motion.div>

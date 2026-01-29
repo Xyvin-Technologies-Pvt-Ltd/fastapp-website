@@ -7,26 +7,29 @@ import image21 from '../../assets/images/feat-img1.webp';
 import image22 from '../../assets/images/feat-img2.webp';
 import image31 from '../../assets/images/img4.webp';
 
+import { useTranslation } from 'react-i18next';
+
 const FeatureSection = () => {
+    const { t } = useTranslation();
     const features = [
         {
-            title: "Book a Ride in Seconds",
-            description: "Instant booking with just a few taps.",
+            title: t('features.list.0.title'),
+            description: t('features.list.0.desc'),
             image: image1,
         },
         {
-            title: "See Fare & Arrival Time",
-            description: "Upfront pricing and ETA.",
+            title: t('features.list.1.title'),
+            description: t('features.list.1.desc'),
             image: image2,
         },
         {
-            title: "Find the Right Ride Instantly",
-            description: "Get matched with nearby drivers for faster pickups and smoother trips.",
+            title: t('features.list.2.title'),
+            description: t('features.list.2.desc'),
             image: image3,
         },
         {
-            title: "Search & Plan Your Ride",
-            description: "Advanced ride search.",
+            title: t('features.list.3.title'),
+            description: t('features.list.3.desc'),
             image: image4,
         },
     ];
@@ -55,10 +58,10 @@ const FeatureSection = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="font-neue text-4xl md:text-5xl lg:text-[56px] font-medium text-black mb-4 -tracking-[0.5px]">
-                        Top Features of <span className="text-[#2DA151] italic">FastApp</span>
+                        {t('features.title_prefix')} <span className="text-[#2DA151] italic">FastApp</span>
                     </h2>
                     <p className="text-[#7E7E7E] text-lg max-w-2xl mx-auto font-[500] font-haas">
-                        FastApp makes booking rides faster, safer, and more transparent—so you can travel with confidence.
+                        {t('features.subtitle')}
                     </p>
                 </motion.div>
                 <div className="flex flex-col md:block">

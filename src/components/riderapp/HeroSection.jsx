@@ -2,7 +2,10 @@ import React from 'react';
 import driverapp from '../../assets/images/hero-rd.webp';
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full relative">
       <div
@@ -12,7 +15,8 @@ const HeroSection = () => {
           bg-cover bg-center bg-no-repeat
           relative
         "
-       style={{ backgroundImage: `
+        style={{
+          backgroundImage: `
                  linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%),
                  url(${driverapp})
                  ` }}
@@ -31,7 +35,7 @@ const HeroSection = () => {
               drop-shadow-2xl
               mb-[50px] md:mb-[75px] lg:mb-[90px]
             "
-          >Your Ride. Your Way. Anytime.</motion.h1>
+          >{t('rider.hero.title')}</motion.h1>
         </div>
       </div>
     </section>

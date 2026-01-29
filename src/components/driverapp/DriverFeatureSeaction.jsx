@@ -8,37 +8,40 @@ import icon5 from '../../assets/images/icon5.webp';
 import icon6 from '../../assets/images/icon6.webp';
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const DriverFeaturesSection = () => {
+  const { t } = useTranslation();
   const features = [
     {
       icon: icon1,
-      title: 'Transparent Earnings',
-      description: 'Know exactly how much you earn for every ride.'
+      title: t('driver.features.list.0.title'),
+      description: t('driver.features.list.0.desc')
     },
     {
       icon: icon2,
-      title: 'Upfront & Transparent Pricing',
-      description: 'See your estimated fare before confirming — no surprises.'
+      title: t('driver.features.list.1.title'),
+      description: t('driver.features.list.1.desc')
     },
     {
       icon: icon3,
-      title: 'Smart Navigation',
-      description: 'Get optimized routes for faster trips.'
+      title: t('driver.features.list.2.title'),
+      description: t('driver.features.list.2.desc')
     },
     {
       icon: icon4,
-      title: 'Flexible Schedule',
-      description: 'Drive when you want — no fixed hours.'
+      title: t('driver.features.list.3.title'),
+      description: t('driver.features.list.3.desc')
     },
     {
       icon: icon5,
-      title: 'Driver Safety',
-      description: 'Emergency support and trip monitoring for drivers too.'
+      title: t('driver.features.list.4.title'),
+      description: t('driver.features.list.4.desc')
     },
     {
       icon: icon6,
-      title: 'Earnings Dashboard',
-      description: 'Track daily, weekly, and monthly income.'
+      title: t('driver.features.list.5.title'),
+      description: t('driver.features.list.5.desc')
     }
   ];
 
@@ -78,7 +81,7 @@ const DriverFeaturesSection = () => {
             <div className="flex items-center gap-2 py-[8px] px-3 bg-[#F4F7F9] border border-[#DDE5ED] rounded-[100px]">
               <PiLightbulbFilamentLight className="w-5 h-5 flex-shrink-0" />
               <span className="font-instrument-sans font-medium text-base leading-6 align-middle">
-                Driver Features
+                {t('driver.features.badge')}
               </span>
             </div>
 
@@ -93,10 +96,10 @@ const DriverFeaturesSection = () => {
                 "
               >
                 <span>
-                  Everything you need for a safe, smooth, and comfortable ride —
+                  {t('driver.features.title.prefix')}
                 </span>
                 <span className="text-[#ACACAC]">
-                  {" "} all in one app.
+                  {" "} {t('driver.features.title.suffix')}
                 </span>
               </h2>
             </div>

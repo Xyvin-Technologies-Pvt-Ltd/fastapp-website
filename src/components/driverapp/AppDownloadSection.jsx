@@ -4,16 +4,19 @@ import scanner2 from '../../assets/images/scanner2.webp'
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const AppDownloadSection = () => {
+  const { t } = useTranslation();
 
 
   const downloadLinks = [
     {
-      title: 'Download Driver App',
+      title: t('driver.download.links.driver'),
       qrCode: scanner2,
     },
     {
-      title: 'Download Passenger App',
+      title: t('driver.download.links.passenger'),
       qrCode: scanner1,
     }
   ];
@@ -54,13 +57,13 @@ const AppDownloadSection = () => {
               className="flex flex-col gap-2 items-center px-4 sm:px-[72px] lg:px-[82px]"
             >
               <h2 className="text-[32px] font-haas sm:text-[42px] lg:text-[48px] font-medium leading-[38px] sm:leading-[50px] lg:leading-[57px] text-center text-text-secondary">
-                <span>Get Where You are </span>
-                <span>Going — </span>
-                <span className="italic text-[#2DA151]">Faster & Smarter</span>
+                <span>{t('driver.download.title.prefix')} </span>
+                <span>{t('driver.download.title.middle')} </span>
+                <span className="italic text-[#2DA151]">{t('driver.download.title.suffix')}</span>
               </h2>
 
               <p className="text-lg text-[#7E7E7E] font-medium leading-[27px] text-center text-text-accent w-full">
-                Book rides instantly with real-time tracking, transparent pricing, and trusted drivers — all in one app.
+                {t('driver.download.description')}
               </p>
             </motion.div>
 
@@ -102,7 +105,7 @@ const AppDownloadSection = () => {
                         {link?.title}
                       </span>
                       <span className="text-[9px] sm:text-xs font-normal leading-[11px] sm:leading-[12px] text-text-primary mt-1">
-                        Scan to download
+                        {t('driver.download.scan_text')}
                       </span>
                       <div className="flex justify-end mt-1">
                         <IoIosArrowRoundForward className="w-5 h-5 sm:w-6 sm:h-6 " />

@@ -2,7 +2,10 @@ import React from 'react';
 import mobile from '../../assets/images/homegroup.webp'
 import { motion } from 'framer-motion';
 
+import { useTranslation } from 'react-i18next';
+
 const MobileShowcaseSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full bg-white  ">
       <motion.div
@@ -12,7 +15,7 @@ const MobileShowcaseSection = () => {
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="w-full max-w-[1000px] mx-auto px-5 md:px-0"
       >
-        <img src={mobile} alt="Mobile App Showcase" className="w-full" />
+        <img src={mobile} alt={t('mobile.showcase_alt')} className="w-full" />
       </motion.div>
     </section>
   );

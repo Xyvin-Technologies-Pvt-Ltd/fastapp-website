@@ -7,27 +7,31 @@ import { PiUsersThreeBold } from "react-icons/pi";
 import { motion } from 'framer-motion';
 
 
+import { useTranslation } from 'react-i18next';
+
+
 const RequirementsSection = () => {
+  const { t } = useTranslation();
   const requirements = [
     {
       icon: <BiMessageRoundedDots className="w-6 h-6 flex-shrink-0" />,
-      title: 'Valid driving license',
-      description: 'A government-approved license to legally drive.'
+      title: t('driver.requirements.list.0.title'),
+      description: t('driver.requirements.list.0.desc')
     },
     {
       icon: <FiShare2 className="w-6 h-6 flex-shrink-0" />,
-      title: 'Registered vehicle',
-      description: 'A properly registered vehicle in good condition.'
+      title: t('driver.requirements.list.1.title'),
+      description: t('driver.requirements.list.1.desc')
     },
     {
       icon: <FiSmile className="w-6 h-6 flex-shrink-0" />,
-      title: 'Smartphone with internet',
-      description: 'Required to receive rides and navigate in real time.'
+      title: t('driver.requirements.list.2.title'),
+      description: t('driver.requirements.list.2.desc')
     },
     {
       icon: <PiUsersThreeBold className="w-6 h-6 flex-shrink-0" />,
-      title: 'Basic background verification',
-      description: 'Simple checks to ensure rider and driver safety.'
+      title: t('driver.requirements.list.3.title'),
+      description: t('driver.requirements.list.3.desc')
     }
   ];
 
@@ -80,8 +84,8 @@ const RequirementsSection = () => {
               transition={{ duration: 0.8 }}
               className="text-[35px] sm:text-[41px] lg:text-[46px] font-medium leading-[42px] sm:leading-[49px] lg:leading-[56px] text-text-secondary"
             >
-              <span>What You </span>
-              <span className="italic text-[#2DA151]">Need?</span>
+              <span>{t('driver.requirements.title.prefix')} </span>
+              <span className="italic text-[#2DA151]">{t('driver.requirements.title.suffix')}</span>
             </motion.h2>
 
             <motion.div

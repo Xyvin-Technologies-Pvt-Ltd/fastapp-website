@@ -9,13 +9,13 @@ import AppDownloadSection from '../../components/driverapp/AppDownloadSection';
 const Driverapp = () => {
   return (
     <>
-        <HeroSection />
-        <MobileShowcaseSection />
-        <DriverFeaturesSection />
-        <RequirementsSection />
-        <SafetySection />
-        <FAQSection />
-        <AppDownloadSection />
+      <HeroSection />
+      <MobileShowcaseSection />
+      <DriverFeaturesSection />
+      <RequirementsSection />
+      <SafetySection />
+      <FAQSection />
+      <AppDownloadSection />
     </>
   );
 };

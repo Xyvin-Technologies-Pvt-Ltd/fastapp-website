@@ -1,12 +1,15 @@
 import image from '../../assets/images/our-office.webp'
 import { motion } from 'framer-motion'
 
+import { useTranslation } from 'react-i18next';
+
 const OurOfficeSection = () => {
+    const { t } = useTranslation();
     const visionPoints = [
-        "Stress-free",
-        "Affordable",
-        "Environment-aware",
-        "Driven by technology and trust"
+        t('about.office.points.0'),
+        t('about.office.points.1'),
+        t('about.office.points.2'),
+        t('about.office.points.3')
     ];
 
     const containerVariants = {
@@ -57,10 +60,10 @@ const OurOfficeSection = () => {
                         className="lg:max-w-[85%]"
                     >
                         <span className="font-haas font-bold text-[16px] leading-[28.5px] tracking-[-0.5%] text-black">
-                            Our <span className="text-[#7E7E7E]">Vision</span>
+                            {t('about.office.vision.prefix')} <span className="text-[#7E7E7E]">{t('about.office.vision.suffix')}</span>
                         </span>
                         <h2 className="font-neue font-medium text-[32px] md:text-[40px] leading-[120%] tracking-[0%] text-black mt-4">
-                            We envision a <span className="text-[#2DA151] italic">future</span> where city travel is:
+                            {t('about.office.title.prefix')} <span className="text-[#2DA151] italic">{t('about.office.title.highlight')}</span> {t('about.office.title.suffix')}
                         </h2>
                     </motion.div>
 
@@ -71,7 +74,7 @@ const OurOfficeSection = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="font-haas font-normal text-[18px] leading-[24px] tracking-[-1%] text-[#7E7E7E] lg:max-w-[85%]"
                     >
-                        FastApp aims to become a preferred mobility partner across cities by continuously improving rider experience and driver satisfaction.
+                        {t('about.office.description')}
                     </motion.p>
 
                     <div className="flex flex-col gap-4">
@@ -82,7 +85,7 @@ const OurOfficeSection = () => {
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className="font-haas font-bold text-[18px] leading-[28.5px] text-[#7E7E7E]"
                         >
-                            We envision a future where city travel is:
+                            {t('about.office.subtitle')}
                         </motion.p>
                         <motion.ul
                             variants={containerVariants}
